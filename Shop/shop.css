@@ -44,3 +44,36 @@ h1 {
     transition: background-color 0.3s;
     display: inline-block; 
 }
+
+main {
+    /* padding: 2rem; */
+    padding-bottom: 2rem;
+    transition: margin-right 0.3s ease;
+}
+
+.category-btn {
+    background-color: #16213e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; 
+}
+.category-btn1 {
+    color:white;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    display: inline-block; 
+}
+#cart-btn {
+    position: absolute;
+    right: 1rem;
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
