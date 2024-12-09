@@ -77,3 +77,14 @@ main {
     cursor: pointer;
     
 }
+
+nav {
+    top: 0;
+    color: white;
+    background-color: #1e1e2f;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    z-index: 100;
+} 
