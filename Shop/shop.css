@@ -230,3 +230,31 @@ body.cart-open {
     margin-top: 1rem;
     cursor: pointer;
 }
+
+#popup {
+    color: white;
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: white;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+     max-width: 80%;
+     max-height: 80%;
+     overflow-y: auto;
+     background-color: #1e1e2f; 
+     z-index: 9999;
+     width: 400px;
+     height: 500px;
+     font-size: 15px;
+    }
+    #closeButton {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }

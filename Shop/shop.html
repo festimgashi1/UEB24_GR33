@@ -17,27 +17,66 @@
         </div>
     </header>
     <main id="main">
-            <nav>
-                <h3 class="category-btn1">Categories: </h3>
-                <button class="category-btn active" data-category="all">All</button>
-                <button class="category-btn" data-category="models">Models</button>
-                <button class="category-btn" data-category="books">Books</button>
-                <button class="category-btn" data-category="clothing">Clothing</button>
-                <button id="cart-btn"><img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
-                        style="width: 35px; height: 35px;"></button>
-            </nav>
-        </main>
+        <nav>
+            <h3 class="category-btn1">Categories: </h3>
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="models">Models</button>
+            <button class="category-btn" data-category="books">Books</button>
+            <button class="category-btn" data-category="clothing">Clothing</button>
+            <button id="cart-btn"><img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
+                    style="width: 35px; height: 35px;"></button>
+        </nav>
 
         <div id="product-grid">
         </div>
+        <div id="popup">
+            <span id="closeButton">&times;</span>
+            <div>
+                <img src="https://www.shutterstock.com/image-illustration/serene-illustration-astronaut-gently-floating-600nw-2503286055.jpg"
+                    style="height: 200px; width:400px;">
+            </div>
+            <div>
+                <fieldset>
+                    <fieldset>
+                        <legend>Email:</legend><input type="email" id="text" style="width: 350px;"
+                            placeholder="example@gmail.com">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Phone number:</legend> <input type="tel" id="phn" style="width: 350px;" required
+                            placeholder="+383 44123432">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Address:</legend><input type="text" id="adr" style="width: 350px;"
+                            placeholder="country-city">
+                    </fieldset>
 
-        <aside id="cart">
-            <button id="close-cart" aria-label="Close cart">&times;</button>
-            <h2>Cart:</h2>
-            <div id="cart-items"></div>
-            <div id="cart-total">Total: $0.00</div>
-            <button id="checkout-btn">Checkout</button>
-        </aside>
+    </main>
+
+    <aside id="cart">
+        <button id="close-cart" aria-label="Close cart">&times;</button>
+        <h2>Cart:</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: $0.00</div>
+        <button id="checkout-btn">Checkout</button>
+    </aside>
+
+    <script>
+        const openButton = document.getElementById('checkout-btn');
+        const popup = document.getElementById('popup');
+        const closeButton = document.getElementById('closeButton');
+
+        openButton.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+        closeButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
 
     <script src="shop.js"></script>
 </body>
