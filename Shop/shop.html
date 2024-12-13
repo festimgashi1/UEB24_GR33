@@ -26,9 +26,10 @@
             <button id="cart-btn"><img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
                     style="width: 35px; height: 35px;"></button>
         </nav>
-
+        <br>
         <div id="product-grid">
         </div>
+
         <div id="popup">
             <span id="closeButton">&times;</span>
             <div>
@@ -60,11 +61,11 @@
         <button id="checkout-btn">Checkout</button>
     </aside>
 
+    
     <script>
         const openButton = document.getElementById('checkout-btn');
         const popup = document.getElementById('popup');
         const closeButton = document.getElementById('closeButton');
-
         openButton.addEventListener('click', () => {
             popup.style.display = 'block';
         });
