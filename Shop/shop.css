@@ -265,3 +265,10 @@ body.cart-open {
         cursor: pointer;
         font-size: 20px;
     }
+
+    #product-grid {
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+        gap: 2rem;
+    }
