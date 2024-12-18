@@ -272,3 +272,13 @@ body.cart-open {
         grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
         gap: 2rem;
     }
+
+    #cart-total {
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    .remove-from-cart-btn:hover {
+        background-color: #c81d4e;
+    }
+    
