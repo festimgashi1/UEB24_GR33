@@ -50,7 +50,29 @@
                         <legend>Address:</legend><input type="text" id="adr" style="width: 350px;"
                             placeholder="country-city">
                     </fieldset>
-
+                    <fieldset>
+                        <legend>Payment method:</legend>
+                        <label>
+                            <input type="radio" checked="checked" name="radio">
+                            Cash
+                          </label>
+                          <label>
+                            <input type="radio" name="radio">
+                            VISA card
+                          </label>
+                          <label>
+                            <input type="radio" name="radio">
+                            PayPal
+                          </label>
+                          <label>
+                            <input type="radio" name="radio">
+                            Mastercard
+                          </label>    
+                    </fieldset>
+                    <button class="done-btn" type="submit" id="ch">Done</button>
+                </fieldset>
+            </div>
+        </div>
     </main>
 
     <aside id="cart">
@@ -60,7 +82,6 @@
         <div id="cart-total">Total: $0.00</div>
         <button id="checkout-btn">Checkout</button>
     </aside>
-
     
     <script>
         const openButton = document.getElementById('checkout-btn');
@@ -78,8 +99,6 @@
             }
         });
     </script>
-
     <script src="shop.js"></script>
 </body>
-
 </html>
