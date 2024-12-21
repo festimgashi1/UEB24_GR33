@@ -118,6 +118,19 @@ function addToCart(event) {
     openCart();
 }
 
+function removeFromCart(event) {
+    const productId = parseInt(event.target.getAttribute('data-id'));
+    const itemIndex = cart.findIndex(item => item.id === productId);
+    if (itemIndex !== -1) {
+        if (cart[itemIndex].quantity > 1) {
+            cart[itemIndex].quantity -= 1;
+        } else {
+            cart.splice(itemIndex, 1);
+        }
+    }
+    renderCart();
+}
+
 document.getElementById('cart-btn').addEventListener('click', openCart);
 document.getElementById('close-cart').addEventListener('click', closeCart);
 
