@@ -17,3 +17,21 @@ body {
     text-align: center;
     min-height: 100vh;
 }
+
+.picture-header {
+    background-image: url('https://live.staticflickr.com/65535/53926942443_53e7cd14c9_c.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
