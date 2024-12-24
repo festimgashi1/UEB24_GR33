@@ -12,6 +12,29 @@
         <h1>NASA Events and Discoveries</h1>
     </header>
     <main>
+        <div id="filter-container">
+            <h2>Filter Events</h2>
+            <label for="region">Filter by Region:</label>
+            <select id="region">
+                <option value="all">All Regions</option>
+                <option value="USA">USA</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Global">Global</option>
+            </select>
+
+            <label for="time">Filter by Time:</label>
+            <select id="time">
+                <option value="all">All Times</option>
+                <option value="future">Future</option>
+                <option value="past">Past</option>
+            </select>
+
+            <label for="favorite-filter">
+                <input type="checkbox" id="show-favorites">
+                Show Favorites
+            </label>
+        </div>
         <div id="events-container"></div>
     </main>
 </body>
