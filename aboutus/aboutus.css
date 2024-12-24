@@ -217,4 +217,23 @@ object-position: center;
 
 }
 
+.about-section-heading{
+    color: rgb(50,50,50);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    
+}
 
+.about-section-heading + h2{
+    font-size: 24px;      
+    color: rgb(100, 100, 100);
+    text-align: center;  
+    margin-top: 10px;
+}
+
+.feature-icon {
+        font-size: 24px;
+        margin-right: 15px;
+        color: #0b3d91;
+}
