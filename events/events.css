@@ -17,3 +17,70 @@ body {
     text-align: center;
     min-height: 100vh;
 }
+
+.picture-header {
+    background-image: url('https://live.staticflickr.com/65535/53926942443_53e7cd14c9_c.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px; 
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 10px; 
+}
+
+#filter-container {
+    background: #2a2a3b;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;  
+    min-width: 300px; 
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced gap between items */
+    align-self: flex-start;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+#filter-container h2 {
+    font-size: 1.4rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem; 
+    text-align: center;
+}
+
+#filter-container label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem; 
+}
+
+#filter-container select {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #ffd700;
+    background-color: #333344;
+    color: #ffd700;
+}
