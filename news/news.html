@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space News Today</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 36px; color: white;">Space News Today</h1>
+    </header>
+
+    <main> 
+
+        <div class="slider-container">
+            <div class="image-container">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/10/54050312989-7f2d600d29-o.jpg" alt="image" class="active">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/as12-46-6728orig.jpg" alt="image">
+                <img src="https://smd-cms.nasa.gov/wp-content/uploads/2023/12/nasa-mars-desktop-8k.jpg" alt="">
+                <img src="https://science.nasa.gov/wp-content/uploads/2023/06/solar-system-illustration-16x9-1.jpg" alt="">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/12/iss072e189028orig.jpg" alt="image">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/11/pia22081orig.jpg" alt="image">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/03/fy25-budget-cover-no-text.png?w=1536" alt="">
+                <img src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?cs=srgb&dl=pexels-philippedonn-1169754.jpg&fm=jpg" alt="">
+                <img src="https://science.nasa.gov/wp-content/uploads/2024/05/europa-clipper-16x9-1.jpg?w=4096&format=jpeg" alt="">
+            </div>            
+        </div>
+
+        <article id="featured-article">
+            <h2 style="padding: 10px 10px 0px 0px; color: white;">NASA's Artemis Program: The Next Giant Leap</h2>
+            <p style="color: white;" class="subtitle">Humanity's return to the Moon and beyond</p>
+            <div class="article-content">
+                <img src="https://i.ytimg.com/vi/9YDfmbmLxwc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBzW48f_aPClYW1FndH9jgcpRZwog" alt="Artemis mission concept art" id="featured-image">
+                <p style="color: white;">NASA's Artemis program aims to land the first woman and the next man on the Moon by 2024, paving the way for sustainable lunar exploration and eventual missions to Mars. This ambitious project represents the next era of human spaceflight and scientific discovery.</p>
+                <a href="https://www.nasa.gov/news-release/nasa-publishes-artemis-plan-to-land-first-woman-next-man-on-moon-in-2024/" target="_blank" class="read-more">Read more about Artemis</a>
+            </div>
+        </article>
+
+        <section id="latest-news">
+            <h2 style="padding: 10px 10px 10px 0px; font-size: 32px; color: white;">Latest Space News</h2>
+            <div id="news-grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
