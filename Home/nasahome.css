@@ -13,7 +13,7 @@ body {
 }
 
 .main-header {
-    background: linear-gradient(135deg, #0b0d17, #030e17);
+    background: linear-gradient(135deg, #010103, #030e17);
     padding: 20px 0;
     border-bottom: 2px solid #fff;
 }
@@ -25,6 +25,8 @@ body {
 }
 
 .logo img {
+    /* background-image:  url('/Home/hphotos/universe.png'); */
+    
     width: 150px;
     height: auto;
 }
@@ -384,7 +386,7 @@ body {
 .about-image img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.884);
 }
 
 .news {
@@ -411,7 +413,7 @@ body {
     background-color: #1a1f36;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.822);
     transition: transform 0.3s;
 }
 
@@ -466,7 +468,7 @@ body {
     background-color: #1a1f36;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.877);
     transition: transform 0.3s;
     text-align: center;
     padding-bottom: 15px;
