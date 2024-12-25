@@ -295,7 +295,7 @@ body.cart-open {
 .main-nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding-right: 10px;
 }
 
 .main-nav ul li a {
@@ -316,6 +316,7 @@ body.cart-open {
 }
 
 .logo {
+    padding-left: 50px;
     display: flex;
     justify-content: flex-start;
 }
