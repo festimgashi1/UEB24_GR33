@@ -147,6 +147,25 @@ main {
 }
 
 
+@media (max-width: 1200px) {
+    #events-container {
+        grid-template-columns: repeat(3, minmax(280px, 1fr)); 
+    }
+}
+
+@media (max-width: 900px) {
+    #events-container {
+        grid-template-columns: repeat(2, minmax(280px, 1fr)); 
+    }
+}
+
+@media (max-width: 600px) {
+    #events-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
 .event-card {
     position: relative;
     background: #2a2a3b;
