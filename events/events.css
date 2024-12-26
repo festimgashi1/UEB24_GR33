@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e2f;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0b0d17, #030e17);
     color: #ffffff;
     line-height: 1.4;
     overflow-x: hidden;
