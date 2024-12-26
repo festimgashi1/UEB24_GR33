@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalTime = document.getElementById('modal-time');
     const regionFilter = document.getElementById('region');
     const timeFilter = document.getElementById('time');
-    
+
 function filterEvents() {
     const region = regionFilter.value;
     const time = timeFilter.value;
@@ -33,7 +33,7 @@ function filterEvents() {
 regionFilter.addEventListener('change', filterEvents);
 timeFilter.addEventListener('change', filterEvents);
 
-// Attach event listeners to event cards for modal functionality
+
 Array.from(eventsContainer.getElementsByClassName('event-card')).forEach(card => {
     card.addEventListener('click', () => showModal(card));
 });
