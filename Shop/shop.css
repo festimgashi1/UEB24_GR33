@@ -253,8 +253,8 @@ body.cart-open {
      overflow-y: auto;
      background-color: #1e1e2f; 
      z-index: 9999;
-     width: 400px;
-     height: 500px;
+     width: 420px;
+     height: 520px;
      font-size: 15px;
     }
     
@@ -328,7 +328,6 @@ body.cart-open {
 
 .done-btn{
 margin-left: 40%;
-
 }
 
 .popimg{
