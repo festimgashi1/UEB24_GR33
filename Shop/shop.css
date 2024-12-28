@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(203, 196, 196);
@@ -449,3 +449,6 @@ margin-left: 40%;
         align-items: center;
     }
     
+    button{
+        font-family: 'Orbitron', sans-serif;
+    }
