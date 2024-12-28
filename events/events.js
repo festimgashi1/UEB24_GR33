@@ -10,6 +10,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const regionFilter = document.getElementById('region');
     const timeFilter = document.getElementById('time');
 
+    function showModal(eventCard) {
+        const imgSrc = eventCard.querySelector('img').src;
+        const title = eventCard.querySelector('h3').textContent;
+        const date = eventCard.querySelector('.event-time:nth-child(3)').textContent;
+        const time = eventCard.querySelector('.event-time:nth-child(4)').textContent;
+        const description = eventCard.getAttribute('data-description'); // Read description from data-description attribute
+
+        modalImage.src = imgSrc;
+        modalTitle.textContent = title;
+        modalDate.textContent = date;
+        modalTime.textContent = time;
+        modalDescription.textContent = description; // Set description in modal
+
+        modal.classList.add('active');
+    }
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+
 function filterEvents() {
     const region = regionFilter.value;
     const time = timeFilter.value;
