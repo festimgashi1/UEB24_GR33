@@ -12,19 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    // Modal functionality
+
     function showModal(eventCard) {
         const imgSrc = eventCard.querySelector('img').src;
         const title = eventCard.querySelector('h3').textContent;
         const date = eventCard.querySelector('.event-time:nth-child(3)').textContent;
         const time = eventCard.querySelector('.event-time:nth-child(4)').textContent;
-        const description = eventCard.getAttribute('data-description'); // Read description from data-description attribute
+        const description = eventCard.getAttribute('data-description'); 
 
         modalImage.src = imgSrc;
         modalTitle.textContent = title;
         modalDate.textContent = date;
         modalTime.textContent = time;
-        modalDescription.textContent = description; // Set description in modal
+        modalDescription.textContent = description; 
 
         modal.classList.add('active');
     }
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Filter functionality
+
     function filterEvents() {
         const region = regionFilter.value;
         const time = timeFilter.value;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     regionFilter.addEventListener('change', filterEvents);
     timeFilter.addEventListener('change', filterEvents);
 
-    // Attach event listeners to event cards for modal functionality
+
     Array.from(eventsContainer.getElementsByClassName('event-card')).forEach(card => {
         card.addEventListener('click', () => showModal(card));
     });
@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const eventsContainer = document.getElementById('events-container');
-    const favoriteCheckbox = document.getElementById('show-favorites'); // Checkbox for showing favorites only
+    const favoriteCheckbox = document.getElementById('show-favorites'); 
     const favoriteEvents = JSON.parse(localStorage.getItem('favorites')) || [];
 
-    // Function to filter favorite events
+
     function filterFavorites() {
         const eventCards = Array.from(eventsContainer.getElementsByClassName('event-card'));
 
@@ -88,44 +88,42 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Function to toggle the favorite state
+
     function toggleFavorite(eventCard) {
         const title = eventCard.querySelector('h3').textContent;
 
-        // Check if the event is in favorites
+
         const index = favoriteEvents.indexOf(title);
         if (index === -1) {
             favoriteEvents.push(title);
-            eventCard.querySelector('.favorite-btn').textContent = '❤️'; // Update to heart icon
+            eventCard.querySelector('.favorite-btn').textContent = '❤️'; 
         } else {
             favoriteEvents.splice(index, 1);
-            eventCard.querySelector('.favorite-btn').textContent = '⭐'; // Update to star icon
+            eventCard.querySelector('.favorite-btn').textContent = '⭐'; 
         }
 
-        // Save the updated favorites in localStorage
+
         localStorage.setItem('favorites', JSON.stringify(favoriteEvents));
-        filterFavorites(); // Reapply the filter
+        filterFavorites(); 
     }
 
-    // Initialize the favorite buttons and add event listeners
+
     Array.from(eventsContainer.getElementsByClassName('event-card')).forEach(card => {
         const title = card.querySelector('h3').textContent;
 
-        // Set the initial state based on localStorage
         if (favoriteEvents.includes(title)) {
-            card.querySelector('.favorite-btn').textContent = '❤️'; // Mark as favorite
+            card.querySelector('.favorite-btn').textContent = '❤️'; 
         }
 
-        // Add click event to toggle favorite
         card.querySelector('.favorite-btn').addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent modal from opening
+            e.stopPropagation(); 
             toggleFavorite(card);
         });
     });
 
-    // Event listener for checkbox filter
+
     favoriteCheckbox.addEventListener('change', filterFavorites);
 
-    // Initialize filter on page load
+
     filterFavorites();
 });
