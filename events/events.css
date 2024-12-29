@@ -290,7 +290,32 @@ main {
     color: #ff4500;
 }
 
+.favorite-btn, .star-btn {
+    position: absolute;
+    bottom: 10px; /* Vendos butonin në fund të kartës */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffd700;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 1;  /* Përdor z-index për të siguruar që butonat shfaqen mbi elementët tjerë */
+}
 
+/* Posiçionimi për Zemrën (favorite) */
+.favorite-btn {
+    right: 10px; /* Për ta afruar më shumë nga e djathta */
+}
+
+/* Posiçionimi për Yllin */
+.star-btn {
+    right: 5px; /* Ylli është më afër djathtas */
+}
+
+.favorite-btn:hover, .star-btn:hover {
+    transform: scale(1.2);
+    color: #ffa500;
+}
 
 .main-footer {
     background-color: #0b0d17;
