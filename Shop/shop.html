@@ -52,21 +52,22 @@
                 <img style="height: 150px; width:420px;" class="popimg">
             </div>
             <div>
-                <br>
+                    <br>
                     <fieldset>
-                        <legend>Email:</legend><input type="email" id="text" style="width: 350px;"
-                            placeholder="example@gmail.com">
+                        <legend>Email:</legend>
+                        <input type="email" id="email" style="width: 350px;" placeholder="example@blla.com" required>
                     </fieldset>
                     <br>
                     <fieldset>
-                        <legend>Phone number:</legend> <input type="tel" id="phn" style="width: 350px;" required
-                            placeholder="+383 44123432">
+                        <legend>Phone number:</legend>
+                        <input type="tel" id="phone" style="width: 350px;" placeholder="+383 4x xxx xxx" required>
                     </fieldset>
                     <br>
                     <fieldset>
-                        <legend>Address:</legend><input type="text" id="adr" style="width: 350px;"
-                            placeholder="country-city">
+                        <legend>Address:</legend>
+                        <input type="text" id="address" style="width: 350px;" placeholder="country-city">
                     </fieldset>
+                    <br>
                     <br>
                     <fieldset>
                         <legend>Payment method:</legend>
@@ -88,8 +89,8 @@
                         </label>
                     </fieldset>
                     <br>
-                    <input class="done-btn" type="submit" id="ch"
-                        onclick="document.getElementById('popup').style.display='none'"></input>
+                    <button type="button" id="submitButton" onclick="handleButtonClick()" class="done-btn">Submit</button>
+                    <p id="message" style="font-weight: bold;" class="message"></p>
                
             </div>
         </div>
@@ -166,6 +167,38 @@
                 popup.style.display = 'none';
             }
         });
+
+        function validateEmail() {
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+
+        function validatePhoneNumber() {
+            const phoneNumber = document.getElementById('phone').value;
+            const phonePattern = /^\+383 4\d \d{3} \d{3}$/;
+            return phonePattern.test(phoneNumber);
+        }
+
+        function handleButtonClick() {
+            const button = document.getElementById('submitButton');
+            const message = document.getElementById('message');
+
+            if (validateEmail() && validatePhoneNumber()) {
+                message.textContent = "Order is on the way";
+                message.style.color = "green";
+                button.disabled = true;
+            } else {
+                message.textContent = "Data is not valid!";
+                message.style.color = "red";
+                button.disabled = true;
+
+                setTimeout(() => {
+                    message.textContent = "";
+                    button.disabled = false;
+                }, 5000);
+            }
+        }
     </script>
     <script src="shop.js"></script>
 </body>
