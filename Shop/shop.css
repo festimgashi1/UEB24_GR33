@@ -330,6 +330,10 @@ body.cart-open {
 margin-left: 40%;
 }
 
+.message{
+    text-align: center;
+    }
+
 .popimg{
     background-image: url(' ');
     }
