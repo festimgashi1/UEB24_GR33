@@ -47,43 +47,73 @@
                     -webkit-font-smoothing:antialiased;
 
                 }
-                nav{
-                    position: fixed;
-                    width: 100%;
-                    z-index: 1000;
-
+                .about-page-content{
+                    margin-top:60px;
+                
+                
                 }
-                #about-page-navbar{
-                    display: flex;
-                    justify-content: center;
-                    place-items: center;
-                    background-color: transparent;
-                    width: 80%;
+                .container {
+                    width: 90%;
+                    max-width: 1200px;
                     margin: auto;
-                    padding: 45px;
-                    
                 }
-ul{
-display: flex;
-list-style: none;
-}
-#about-page-nav-text a{
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    margin-left: 90px;
-    text-decoration: none;
-    -webkit-font-smoothing:antialiased;
-    transition: .4 ease-in-out;
-}
-#about-page-nav-text a:hover{
-    color: blue;
-}
-.about-page-content{
-    margin-top:60px;
-
-
-}
+                
+                .main-header {
+                    background: linear-gradient(135deg, #0b0d17, #030e17);
+                    padding: 20px 0;
+                    border-bottom: 2px solid #fff;
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    padding: 40px 0;
+                }
+                
+                .main-header .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%; 
+                }
+                
+                .logo img {
+                    width: 150px;
+                    height: auto;
+                }
+                
+                .main-nav ul {
+                    display: flex;
+                    gap: 25px;
+                    list-style: none;
+                    padding: 0;
+                }
+                
+                .main-nav ul li a {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s;
+                }
+                
+                .main-nav ul li a:hover {
+                    background-color: #fff;
+                    color: #0e1a27;
+                }
+                
+                main {
+                    display: flex;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 20px auto;
+                    gap: 20px; 
+                    justify-content: flex-start;
+                    padding: 0;
+                    margin-left: 10px; 
+                }
+                
 
 #about-section1{
     padding:5px;
