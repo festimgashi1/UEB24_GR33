@@ -317,6 +317,22 @@ main {
     color: #ffa500;
 }
 
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%; 
+}
+
+#map {
+    height: 600px; 
+    width: 1000px;  
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffd700; 
+}
+
 .main-footer {
     background-color: #0b0d17;
     padding: 50px 20px;

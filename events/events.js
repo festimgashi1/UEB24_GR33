@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-
+ 
     function showModal(eventCard) {
         const imgSrc = eventCard.querySelector('img').src;
         const title = eventCard.querySelector('h3').textContent;
@@ -70,6 +70,45 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    const map = L.map('map', { zoomControl: false }).setView([0, 0], 2); 
+
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+    const eventCards = Array.from(document.getElementsByClassName('event-card'));
+
+    eventCards.forEach(card => {
+        const title = card.querySelector('h3').textContent;
+        const description = card.getAttribute('data-description');
+        const lat = parseFloat(card.getAttribute('data-lat')); 
+        const lng = parseFloat(card.getAttribute('data-lng')); 
+
+        if (lat && lng) {
+
+            const marker = L.marker([lat, lng]).addTo(map);
+            marker.bindPopup(`<b>${title}</b><br>`);
+        }
+    });
+
+
+    const markers = eventCards
+        .map(card => [
+            parseFloat(card.getAttribute('data-lat')),
+            parseFloat(card.getAttribute('data-lng'))
+        ])
+        .filter(coords => coords[0] && coords[1]); 
+
+    if (markers.length > 0) {
+        const bounds = L.latLngBounds(markers);
+        map.fitBounds(bounds, { padding: [20, 20] });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     const eventsContainer = document.getElementById('events-container');
     const favoriteCheckbox = document.getElementById('show-favorites'); 
     const favoriteEvents = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -111,9 +150,11 @@ document.addEventListener('DOMContentLoaded', function () {
     Array.from(eventsContainer.getElementsByClassName('event-card')).forEach(card => {
         const title = card.querySelector('h3').textContent;
 
+
         if (favoriteEvents.includes(title)) {
             card.querySelector('.favorite-btn').textContent = '❤️'; 
         }
+
 
         card.querySelector('.favorite-btn').addEventListener('click', (e) => {
             e.stopPropagation(); 
