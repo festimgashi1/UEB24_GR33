@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showNextImage, 8000);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const newsItems = [
         {
             title: "SpaceX Starship Completes High-Altitude Test",
@@ -169,14 +169,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const newsItem = document.createElement('div');
         newsItem.classList.add('news-item');
         newsItem.innerHTML = `
-         <img src="${item.image}" alt="${item.title}" onerror="this.onerror=null; this.classList.add('error'); this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23e0e0e0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'14\' fill=\'%23666666\'%3EImage not available%3C/text%3E%3C/svg%3E';">
-         <div class = "news-content">
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-            <span class="category">${item.category}</span>
-            <a href="${item.sourceUrl}" class="read-more" target="_blank" rel="noopener noreferrer">Read full story</a>
-         </div>   
-        `;
+     <img src="${item.image}" alt="${item.title}" onerror="this.onerror=null; this.classList.add('error'); this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%25\' height=\'100%25\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%23e0e0e0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'14\' fill=\'%23666666\'%3EImage not available%3C/text%3E%3C/svg%3E';">
+     <div class = "news-content">
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <span class="category">${item.category}</span>
+        <a href="${item.sourceUrl}" class="read-more" target="_blank" rel="noopener noreferrer">Read full story</a>
+     </div>   
+    `;
         newsGrid.appendChild(newsItem);
     });
 });
+
+
