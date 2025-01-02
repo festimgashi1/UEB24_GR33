@@ -25,8 +25,14 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+
 .article-content img {
     border-radius: 10px 10px 0px 0px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 15%;
 }
 .news-item {
     background-color: #2a2a3b;
@@ -112,12 +118,41 @@ p {
     opacity: 1;
 }
 
+.image-container1 {
+    position: relative;
+    width: 120%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-container1 img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-container1 img.active {
+    opacity: 1;
+}
+
 @media (min-width: 768px) {
     .article-content {
         flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    #featured-image {
+    .article-content img {
         max-width: 50%;
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 }
