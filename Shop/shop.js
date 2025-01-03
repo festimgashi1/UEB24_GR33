@@ -12,7 +12,7 @@ const products = [
     { id: 11, name: "Telescope N 150/750 EQ-3", price: 279.99, category: "models", image: "https://www.astroshop.eu/Produktbilder/zoom/13764_1/Omegon-Telescope-N-150-750-EQ-3.jpg" },
     { id: 12, name: "Omegon 2.1x42 Wide-Field Binoculars", price: 179.50, category: "models", image: "https://www.astroart-store.com/tuotekuvat/800x800/Omegon_OM2x42.jpg" },
     { id: 13, name: "Phone Holder for Telescopes", price: 79.99, category: "models", image: "https://www.astroart-store.com/tuotekuvat/800x800/BTC_puhelin.jpg"},
-    { id: 14, name: "Skywatcher StarQuest 90MC Telescope", price: 374.99, category: "models", image: "https://www.skywatcher.it/wp-content/uploads/2019/06/Sky-Watcher-Starquest-Mak90-5.jpg" },
+    { id: 14, name: "Skywatcher StarQuest 90MC Telescope", price: 374.99, category: "models", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6o5-O6inEwD01Jyi8xWT__snOukkKKn5uA&s" },
     { id: 15, name: "Unisex Starship Flight 6 T-Shirt", price: 49.99, category: "clothing", image: "https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Tshirt_Back_Black_900x.png?v=1731359541" },
     { id: 16, name: "Starship Flight 5 Mission Patch", price: 19.99, category: "clothing", image: "https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_5_Patch_800x.png?v=1728506804" },
     { id: 17, name: "Polaris Dawn Mission Patch", price: 19.99, category: "clothing", image: "https://shop.spacex.com/cdn/shop/files/Polaris_Dawn_Mission_Patch_a3182692-c1de-4064-859a-e6da83fc56c5_800x.png?v=1724350551" },

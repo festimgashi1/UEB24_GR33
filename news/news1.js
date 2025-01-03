@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.image-container img');
+    const images = document.querySelectorAll('.image-container1 img');
     let currentIndex = 0;
+
+    images[0].classList.add('active');
 
     function showNextImage() {
         images[currentIndex].classList.remove('active');
@@ -8,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         images[currentIndex].classList.add('active');
     }
 
-    
-    setInterval(showNextImage, 8000);
+    setInterval(showNextImage, 5000);
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -361,7 +362,8 @@ document.addEventListener('DOMContentLoaded', function () {
             sourceUrl: "https://www.nasa.gov/news-release/nasa-publishes-artemis-plan-to-land-first-woman-next-man-on-moon-in-2024/",
             date: '2014-12-10'
         }
-    ]   
+    ]
+
     const newsGrid = document.getElementById('news-grid');
 
     newsItems.forEach(item => {

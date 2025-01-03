@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
 
-
-    <nav>
-        <div id="about-page-navbar">
-            <div id="about-page-nav-text">
-                <ul>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Our Mission</a>
-                    </li>
-                    <li>
-                        <a href="#">Meet the Astronauts</a>
-                    </li>
-                    <li>
-                        <a href="#">TimeLine</a>
-                    </li>
-                    
-                </ul>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+              <img style="width: 180px; height: 140px;" src="https://mail.google.com/mail/u/2?ui=2&ik=b458992570&attid=0.1&permmsgid=msg-a:r691731773497202744&th=194238ccdb3aaf4c&view=att&disp=safe&realattid=f_m5eclkoj0&zw" alt="">
             </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/Home/nasahome.html" target="_blank">Home</a></li>
+                    <li><a href="/events/events.html" target="_blank">Events</a></li>
+                    <li><a href="/news/news.html" target="_blank">News</a></li>
+                    <li><a href="/Shop/shop.html" target="_blank">Shop</a></li>
+                    <li><a href="/aboutus/aboutus.html" target="_blank">About Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
+
     <section id="about" class="about">
         <div class="stars"></div>
         <div class="twinkling"></div>
@@ -47,6 +43,9 @@
         <div id="about-section1">
      <h1 class="about-section-heading">
         Who We Are
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="gold" style="vertical-align: middle; margin-left: 10px;">
+            <path d="M12 2.5l2.73 6.99h7.26l-5.88 4.28 2.26 6.99-5.88-4.28-5.88 4.28 2.26-6.99-5.88-4.28h7.26z"/>
+        </svg>
      </h1>
      <div class="border-line"></div>
      <p class="about-text">
@@ -96,6 +95,209 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                 <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Space Exploration">
             </div>
         </div>
+
+        <div id="about-section3">
+            <h1 class="about-section-heading">🚀Our Founders</h1>
+            <h2>Meet our Team</h2>
+            <div id="about-founders-container">
+                <div class="about-founders-box"data-founder="festim">
+                    <div class="about-founders-shape">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/68b67fc4-3e76-4238-b545-f6b844fe3d9c/AlvinDrew.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="about-founders-text">
+                        <p class="about-founders-name">Festim Gashi</p>
+                        <p class="about-founders-position">Aerospace Engineering</p>
+                    </div>
+                </div>
+                <div class="about-founders-box"data-founder="getoar">
+                    <div class="about-founders-shape">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/44ff8118-0b16-4007-85db-e56620de2fa4/CalebHenry.jpg?format=500w" width="100%" height="100%">
+                    </div>
+                    <div class="about-founders-text">
+                        <p class="about-founders-name">Getoar Hoxha</p>
+                        <p class="about-founders-position">Director of Research at Quilty Analytics</p>
+                    </div>
+                </div>
+                <div class="about-founders-box"data-founder="grese">
+                    <div class="about-founders-shape">
+                        <img src="https://t3.ftcdn.net/jpg/05/68/84/94/360_F_568849416_oxmxa6E2NrlRWLXxBFRJtrwEYettyhdH.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="about-founders-text">
+                        <p class="about-founders-name">Grese Ferataj</p>
+                        <p class="about-founders-position">Computer Engineering</p>
+                    </div>
+                </div>
+                <div class="about-founders-box"data-founder="jon">
+                    <div class="about-founders-shape">
+                        <img src="https://pbs.twimg.com/media/GcsrV9VWkAAaTq_?format=jpg&name=4096x4096" width="100%" height="100%">
+                    </div>
+                    <div class="about-founders-text">
+                        <p class="about-founders-name">Jon Jashari</p>
+                        <p class="about-founders-position">Manager</p>
+                    </div>
+                </div>
+                <div class="about-founders-box"data-founder="gresa">
+                    <div class="about-founders-shape">
+                        <img src="https://cdn.azeusconvene.com/wp-content/uploads/Women-CEOs-and-Business-Leaders_banner.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="about-founders-text">
+                        <p class="about-founders-name">Gresa Thaci</p>
+                        <p class="about-founders-position">The Leader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="founder-modal" style="display: none;">
+            <div id="modal-content">
+                <span id="modal-close">&times;</span>
+                <img id="modal-image" alt="Founder">
+                <h2 id="modal-name"></h2>
+                <p id="modal-position"></p>
+                <p id="modal-bio"></p>
+            </div>
+        </div>
+      
+         
+        <section id="timeline">
+            <div class="container">
+                <h2 class="about-section-heading">NASA Timeline</h2>
+                <div class="border-line" style="margin-top: 27px; margin-bottom: 27px";></div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1958</div>
+                            <div class="event">NASA is established</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1961</div>
+                            <div class="event">First American in space: Alan Shepard</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1969</div>
+                            <div class="event">Apollo 11 moon landing</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1981</div>
+                            <div class="event">First Space Shuttle launch</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1990</div>
+                            <div class="event">Hubble Space Telescope launched</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">1998</div>
+                            <div class="event">International Space Station construction begins</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">2012</div>
+                            <div class="event">Curiosity rover lands on Mars</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="content">
+                            <div class="year">2020</div>
+                            <div class="event">SpaceX Crew Dragon first crewed flight</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+
+
+<script>
+window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');
+</script>
+<script>
+    $(document).ready(function() {
+    // Check if jQuery is working
+    if (typeof jQuery != 'undefined') {
+        console.log('jQuery is loaded');
+        
+        // Your existing click handlers
+        $('.about-founders-box').click(function() {
+            var founderId = $(this).data('founder');
+            showFounderDetails(founderId);
+        });
+        
+        // Close modal handlers
+        $('#modal-close, #founder-modal').click(function(e) {
+            if (e.target === this) {
+                $('#founder-modal').fadeOut();
+            }
+        });
+        
+        // Prevent modal from closing when clicking content
+        $('#modal-content').click(function(e) {
+            e.stopPropagation();
+        });
+    } else {
+        console.error('jQuery is not loaded');
+    }
+});
+
+// Function to show founder details
+function showFounderDetails(founderId) {
+    // Founder data object
+    var founderData = {
+        festim: {
+            name: "Festim Gashi",
+            position: "Aerospace Engineering",
+            image: "https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/68b67fc4-3e76-4238-b545-f6b844fe3d9c/AlvinDrew.jpg",
+            bio: " Festim Gashi is a seasoned aerospace engineer specializing in designing and implementing innovative space technologies. With years of experience working on high-profile NASA projects, he is passionate about advancing human capabilities in space exploration."
+        },
+        getoar: {
+            name: "Getoar Hoxha",
+            position: "Director of Research at Quilty Analytics",
+            image: "https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/44ff8118-0b16-4007-85db-e56620de2fa4/CalebHenry.jpg",
+            bio: "Getoar Hoxha is an expert in satellite communications and research analysis. As the Director of Research at Quilty Analytics, he has pioneered numerous studies focusing on improving global connectivity through advanced satellite networks."
+        },
+        grese: {
+            name: "Grese Ferataj",
+            position: "Computer Engineering",
+            image: "https://t3.ftcdn.net/jpg/05/68/84/94/360_F_568849416_oxmxa6E2NrlRWLXxBFRJtrwEYettyhdH.jpg",
+            bio: "Grese Ferataj is a visionary computer engineer with expertise in software development and artificial intelligence. She has contributed to creating cutting-edge applications in healthcare and education, leveraging AI to solve complex real-world problems."
+        },
+        jon: {
+            name: "Jon Jashari",
+            position: "Manager",
+            image: "https://pbs.twimg.com/media/GcsrV9VWkAAaTq_?format=jpg&name=4096x4096",
+            bio: "Jon Jashari is a dynamic leader with exceptional skills in managing large teams and projects. With a strong background in operations and logistics, Jon ensures seamless execution of initiatives."
+        },
+        gresa: {
+            name: "Gresa Thaci",
+            position: "The Leader",
+            image: "https://cdn.azeusconvene.com/wp-content/uploads/Women-CEOs-and-Business-Leaders_banner.jpg",
+            bio: "Gresa Thaci is a charismatic and results-driven leader who inspires her team with vision and determination. As the driving force behind the organization, she excels in strategic planning, team building, and innovation."
+        }
+    };
+
+    var founder = founderData[founderId];
+    if (founder) {
+        $('#modal-image').attr('src', founder.image);
+        $('#modal-name').text(founder.name);
+        $('#modal-position').text(founder.position);
+        $('#modal-bio').text(founder.bio);
+        $('#founder-modal').fadeIn();
+    }
+}
+        
+</script>
        
     
 </body>
