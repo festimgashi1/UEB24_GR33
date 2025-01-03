@@ -373,17 +373,6 @@ margin-left: 40%;
         color: #fff;
     }
     
-    .social-icons a {
-        margin-right: 15px;
-        color: #ccc;
-        font-size: 20px;
-        transition: color 0.3s;
-    }
-    
-    .social-icons a:hover {
-        color: #4a90e2;
-    }
-    
     .footer-bottom {
         text-align: center;
         border-top: 1px solid #4a90e2;
