@@ -142,12 +142,12 @@ main {
     height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    width: 300px; /* Madhësi e njëjtë me filtrin */
+    width: 300px; 
     min-width: 300px;
     margin-top: 20px;
     text-align: center;
-    position: relative; /* Aktivizon pozicionimin */
-    left: 0px; /* Shtyn seksionin më në të majtë */
+    position: relative;
+    left: 0px; 
 }
 
 #random-fact-section h2 {
@@ -185,9 +185,9 @@ main {
 #sidebar-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Hapësirë midis filtrit dhe faktit */
+    gap: 20px; 
     align-self: flex-start;
-    width: 300px; /* Madhësia e njëjtë si `#filter-container` */
+    width: 300px; 
 }
 
 #countdown-section {  
