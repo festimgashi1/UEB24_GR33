@@ -505,3 +505,14 @@ main {
 .footer-bottom ul li a:hover {
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    #events-container {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    #events-container {
+        grid-template-columns: 1fr;
+    }
+}
