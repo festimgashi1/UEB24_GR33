@@ -2,7 +2,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(203, 196, 196);
+    background:linear-gradient(135deg, #0b0d17, #030e17) ;
     transition: margin-right 0.3s ease;
 }
 
@@ -22,7 +22,6 @@ body {
 h1 {
     text-align: center;
     -webkit-text-stroke: 1px black; 
-    /* margin: 0; */
     font-size: 2.5rem;
     padding-top: 220px;
 } 
@@ -31,7 +30,7 @@ h1 {
     position: absolute;
     top: 75%;
     left: 46%;
-    background-color: #16213e;
+    background-color:#030e17;
     color: white;
     border: none;
     border-radius: 10%;
@@ -48,7 +47,7 @@ main {
 }
 
 .category-btn {
-    background-color: #16213e;
+    background-color:#030e17;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -67,13 +66,13 @@ main {
 }
 
 .category-btn:hover, .category-btn.active {
-    background-color: #0f3460;
+    background-color: #16213e;
 }
 
 #cart-btn {
     position: absolute;
     right: 1rem;
-    background-color: #1e1e2f;
+    background: #2a2a3b;
     color: white;
     border: none;
     cursor: pointer;   
@@ -82,17 +81,18 @@ main {
 nav {
     top: 0;
     color: white;
-    background-color: #1e1e2f;
+    background: #2a2a3b;
     display: flex;
     align-items: center;
     padding: 1rem;
     position: sticky;
     z-index: 100;
+    border-bottom: solid black 1px;
 } 
 
 .product-card {
     position: inline-block;
-    background-color: white;
+    background: #2a2a3b;
     border-radius: 10px;
     overflow: hidden; 
     box-shadow: 0 4px 6px #16213e;
@@ -124,11 +124,12 @@ nav {
 .product-name {
     font-size: 1.2rem;
     margin: 0 0 0.5rem;
+    color: #ffd700;
 }
 
 .product-price {
     font-weight: bold;
-    color: #0f3460;
+    color: white;
 }
 
 body.cart-open {
@@ -142,7 +143,7 @@ body.cart-open {
     left: 0;
     width: 80%; 
     padding: 0.5rem;
-    background-color: #0f3460;
+    background-color:#030e17;
     color: white;
     border: none;
     cursor: pointer;
@@ -167,7 +168,7 @@ body.cart-open {
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: white;
+    background-color: rgb(203, 196, 196);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
     padding: 1rem;
@@ -210,7 +211,7 @@ body.cart-open {
 }
 
 .remove-from-cart-btn {
-    background-color: #0f3460;
+    background-color:#030e17;
     color: white;
     border: none;
     border-radius: 50%;
@@ -229,7 +230,7 @@ body.cart-open {
     display: block;
     width: 100%;
     padding: 0.5rem;
-    background-color: #0f3460;
+    background: linear-gradient(135deg, #0b0d17, #030e17);
     color: white;
     border: none;
     cursor: pointer;
@@ -253,7 +254,8 @@ body.cart-open {
     }
     
 .container {
-    background-color: #1e1e2f;
+    background: linear-gradient(135deg, #010103, #030e17);
+    border-bottom: 2px solid #fff;
     top: 0px;
     width: 100%;
     margin: auto;
@@ -371,17 +373,6 @@ margin-left: 40%;
     
 .footer-section ul li a:hover {
         color: #fff;
-    }
-    
-    .social-icons a {
-        margin-right: 15px;
-        color: #ccc;
-        font-size: 20px;
-        transition: color 0.3s;
-    }
-    
-    .social-icons a:hover {
-        color: #4a90e2;
     }
     
     .footer-bottom {
