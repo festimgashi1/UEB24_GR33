@@ -42,6 +42,10 @@
 
 
                 }
+
+                abbr {
+                    text-decoration: none; 
+                  }
                 #about-banner-content h1{
                     color: blueviolet;
                     font-weight: 500;
@@ -201,8 +205,11 @@
     margin-bottom: 20px;
 }
 
- 
-
+mark {
+    background-color: rgb(219, 255, 17);
+    color: black;
+    font-weight: bold;
+  }
 
 
 .feature-list {
