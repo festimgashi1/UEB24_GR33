@@ -221,52 +221,139 @@
     color: #0b3d91;
 }
 
-#about-founders-container{
-display: flex;
-justify-content: center;
-flex-direction: row;
-
-}
-
-.about-founders-box{
-padding: 30px;
-margin: 20px;
-}
-
-.about-founders-shape{
-width: 250px;
-height: 250px;
-border-radius: 50%;
-overflow: hidden;
-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.about-founders-shape img{
-object-fit: cover;
-object-position: center;
-
-}
-
-.about-section-heading{
-    color: rgb(50,50,50);
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    
-}
-
-.about-section-heading + h2{
-    font-size: 24px;      
-    color: rgb(100, 100, 100);
-    text-align: center;  
-    margin-top: 10px;
-}
 
 .feature-icon {
         font-size: 24px;
         margin-right: 15px;
         color: #0b3d91;
 }
+
+#about-section3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about-section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+#about-founders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.about-founders-box {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.about-founders-box:hover {
+    transform: scale(1.05);
+}
+.about-founders-shape {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.about-founders-shape img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-founders-text {
+    padding: 15px;
+}
+.about-founders-name {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.about-founders-position {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+
+
+
+
+
+#founder-modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 9999;
+}
+
+#modal-content {
+background-color: white;
+width: 90%;
+max-width: 600px;
+margin: 50px auto;
+padding: 20px;
+border-radius: 10px;
+position: relative;
+}
+
+#modal-close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 24px;
+cursor: pointer;
+}
+
+#modal-image {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+margin: 0 auto 20px;
+display: block;
+}
+
+#modal-name {
+text-align: center;
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+#modal-position {
+text-align: center;
+color: #666;
+margin-bottom: 20px;
+}
+
+#modal-bio {
+text-align: justify;
+line-height: 1.6;
+}
+
+.about-founders-box {
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+.about-founders-box:hover {
+transform: scale(1.05);
+}
+
+
 
 .timeline {
     position: relative;

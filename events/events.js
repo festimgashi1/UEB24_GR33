@@ -168,3 +168,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterFavorites();
 });
+
+// Lista e fakteve për Astronominë
+const astronomyFacts = [
+    "The Milky Way galaxy will collide with the Andromeda galaxy in about 4.5 billion years.",
+    "A day on Venus is longer than a year on Venus.",
+    "There are more stars in the universe than grains of sand on all Earth's beaches.",
+    "Neutron stars are so dense that a sugar-cube-sized amount of material would weigh a billion tons on Earth.",
+    "Saturn's moon Titan has a thick atmosphere and lakes of liquid methane.",
+    "The largest volcano in the solar system is Olympus Mons on Mars.",
+    "A light year is the distance light travels in one year, about 5.88 trillion miles (9.46 trillion kilometers).",
+    "Black holes are so dense that not even light can escape their gravity.",
+    "The Sun accounts for 99.86% of the mass in the solar system.",
+    "Jupiter has the most moons of any planet in our solar system, with 95 confirmed moons as of now."
+];
+
+// Funksioni për të marrë një fakt të rastësishëm
+function getRandomFact() {
+    const randomIndex = Math.floor(Math.random() * astronomyFacts.length);
+    return astronomyFacts[randomIndex];
+}
+
+// Event listener për butonin
+document.getElementById('fact-button').addEventListener('click', () => {
+    const fact = getRandomFact();
+    document.getElementById('fact-display').innerText = fact;
+});

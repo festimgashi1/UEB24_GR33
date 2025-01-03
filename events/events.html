@@ -32,28 +32,42 @@
         <h1>NASA Events and Discoveries</h1>
     </header>
     <main>
-        <div id="filter-container">
-            <h2>Filter Events</h2>
-            <label for="region">Filter by Region:</label>
-            <select id="region">
-                <option value="all">All Regions</option>
-                <option value="USA">USA</option>
-                <option value="Europe">Europe</option>
-                <option value="Asia">Asia</option>
-                <option value="Global">Global</option>
-            </select>
+        <div id="sidebar-container">
+            <!-- Filter Section -->
+            <div id="filter-container">
+                <h2>Filter Events</h2>
+                <label for="region">Filter by Region:</label>
+                <select id="region">
+                    <option value="all">All Regions</option>
+                    <option value="USA">USA</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Global">Global</option>
+                </select>
+    
+                <label for="time">Filter by Time:</label>
+                <select id="time">
+                    <option value="all">All Times</option>
+                    <option value="future">Future</option>
+                    <option value="past">Past</option>
+                </select>
+    
+                <label for="favorite-filter">
+                    <input type="checkbox" id="show-favorites">
+                    Show Favorites
+                </label>
+            </div>
+            <div id="random-fact-section">
+                <h2>Did You Know?</h2>
+                <p id="fact-display">Click the button below to learn something fascinating about Astronomy!</p>
+                <button id="fact-button">Show Me a Fact</button>
+            </div>
 
-            <label for="time">Filter by Time:</label>
-            <select id="time">
-                <option value="all">All Times</option>
-                <option value="future">Future</option>
-                <option value="past">Past</option>
-            </select>
-
-            <label for="favorite-filter">
-                <input type="checkbox" id="show-favorites">
-                Show Favorites
-            </label>
+            <div id="countdown-section">  
+                <h2>Next Event Countdown</h2>  
+                <p id="countdown-timer">Loading...</p>  
+            </div> 
+    
         </div>
         <div id="events-container">
             <div class="event-card" data-region="Europe" data-time="future" data-description="Part of NASA's Commercial Lunar Payload Services (CLPS) program, Firefly Aerospace’s Blue Ghost Mission One lander will deliver 10 science and technology payloads to the Moon.

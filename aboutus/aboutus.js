@@ -12,3 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     timelineItems.forEach(item => observer.observe(item)); 
 });
 
+
+
+
+        
