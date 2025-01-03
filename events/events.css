@@ -190,6 +190,31 @@ main {
     width: 300px; /* Madhësia e njëjtë si `#filter-container` */
 }
 
+#countdown-section {  
+    background: #2a2a3b;  
+    border-radius: 12px;  
+    padding: 1.5rem;  
+    height: fit-content;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+    color: #ffffff;  
+    width: 300px;  
+    min-width: 300px;  
+    margin-top: 20px;  
+    text-align: center;  
+}  
+
+#countdown-section h2 {  
+    font-size: 1.5rem;  
+    color: #ffd700;  
+    margin-bottom: 1rem;  
+}  
+
+#countdown-timer {  
+    font-size: 1.2rem;  
+    color: #dddddd;  
+    line-height: 1.4;  
+} 
+
 #events-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(280px, 1fr)); 
