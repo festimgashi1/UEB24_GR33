@@ -99,7 +99,7 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
             <h1 class="about-section-heading">🚀Our Founders</h1>
             <h2>Meet our Team</h2>
             <div id="about-founders-container">
-                <div class="about-founders-box">
+                <div class="about-founders-box"data-founder="festim">
                     <div class="about-founders-shape">
                         <img src="https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/68b67fc4-3e76-4238-b545-f6b844fe3d9c/AlvinDrew.jpg" width="100%" height="100%">
                     </div>
@@ -108,7 +108,7 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p class="about-founders-position">Aerospace Engineering</p>
                     </div>
                 </div>
-                <div class="about-founders-box">
+                <div class="about-founders-box"data-founder="getoar">
                     <div class="about-founders-shape">
                         <img src="https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/44ff8118-0b16-4007-85db-e56620de2fa4/CalebHenry.jpg?format=500w" width="100%" height="100%">
                     </div>
@@ -117,7 +117,7 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p class="about-founders-position">Director of Research at Quilty Analytics</p>
                     </div>
                 </div>
-                <div class="about-founders-box">
+                <div class="about-founders-box"data-founder="grese">
                     <div class="about-founders-shape">
                         <img src="https://t3.ftcdn.net/jpg/05/68/84/94/360_F_568849416_oxmxa6E2NrlRWLXxBFRJtrwEYettyhdH.jpg" width="100%" height="100%">
                     </div>
@@ -126,7 +126,7 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p class="about-founders-position">Computer Engineering</p>
                     </div>
                 </div>
-                <div class="about-founders-box">
+                <div class="about-founders-box"data-founder="jon">
                     <div class="about-founders-shape">
                         <img src="https://pbs.twimg.com/media/GcsrV9VWkAAaTq_?format=jpg&name=4096x4096" width="100%" height="100%">
                     </div>
@@ -135,7 +135,7 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p class="about-founders-position">Manager</p>
                     </div>
                 </div>
-                <div class="about-founders-box">
+                <div class="about-founders-box"data-founder="gresa">
                     <div class="about-founders-shape">
                         <img src="https://cdn.azeusconvene.com/wp-content/uploads/Women-CEOs-and-Business-Leaders_banner.jpg" width="100%" height="100%">
                     </div>
@@ -143,8 +143,19 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p class="about-founders-name">Gresa Thaci</p>
                         <p class="about-founders-position">The Leader</p>
                     </div>
+                </div>
             </div>
         </div>
+        <div id="founder-modal" style="display: none;">
+            <div id="modal-content">
+                <span id="modal-close">&times;</span>
+                <img id="modal-image" alt="Founder">
+                <h2 id="modal-name"></h2>
+                <p id="modal-position"></p>
+                <p id="modal-bio"></p>
+            </div>
+        </div>
+      
          
         <section id="timeline">
             <div class="container">
@@ -202,6 +213,90 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                 </div>
             </div>
         </section>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+
+
+<script>
+window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"><\/script>');
+</script>
+<script>
+    $(document).ready(function() {
+    // Check if jQuery is working
+    if (typeof jQuery != 'undefined') {
+        console.log('jQuery is loaded');
+        
+        // Your existing click handlers
+        $('.about-founders-box').click(function() {
+            var founderId = $(this).data('founder');
+            showFounderDetails(founderId);
+        });
+        
+        // Close modal handlers
+        $('#modal-close, #founder-modal').click(function(e) {
+            if (e.target === this) {
+                $('#founder-modal').fadeOut();
+            }
+        });
+        
+        // Prevent modal from closing when clicking content
+        $('#modal-content').click(function(e) {
+            e.stopPropagation();
+        });
+    } else {
+        console.error('jQuery is not loaded');
+    }
+});
+
+// Function to show founder details
+function showFounderDetails(founderId) {
+    // Founder data object
+    var founderData = {
+        festim: {
+            name: "Festim Gashi",
+            position: "Aerospace Engineering",
+            image: "https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/68b67fc4-3e76-4238-b545-f6b844fe3d9c/AlvinDrew.jpg",
+            bio: " Festim Gashi is a seasoned aerospace engineer specializing in designing and implementing innovative space technologies. With years of experience working on high-profile NASA projects, he is passionate about advancing human capabilities in space exploration."
+        },
+        getoar: {
+            name: "Getoar Hoxha",
+            position: "Director of Research at Quilty Analytics",
+            image: "https://images.squarespace-cdn.com/content/v1/5f61676ab765cc4f9c9ecc02/44ff8118-0b16-4007-85db-e56620de2fa4/CalebHenry.jpg",
+            bio: "Getoar Hoxha is an expert in satellite communications and research analysis. As the Director of Research at Quilty Analytics, he has pioneered numerous studies focusing on improving global connectivity through advanced satellite networks."
+        },
+        grese: {
+            name: "Grese Ferataj",
+            position: "Computer Engineering",
+            image: "https://t3.ftcdn.net/jpg/05/68/84/94/360_F_568849416_oxmxa6E2NrlRWLXxBFRJtrwEYettyhdH.jpg",
+            bio: "Grese Ferataj is a visionary computer engineer with expertise in software development and artificial intelligence. She has contributed to creating cutting-edge applications in healthcare and education, leveraging AI to solve complex real-world problems."
+        },
+        jon: {
+            name: "Jon Jashari",
+            position: "Manager",
+            image: "https://pbs.twimg.com/media/GcsrV9VWkAAaTq_?format=jpg&name=4096x4096",
+            bio: "Jon Jashari is a dynamic leader with exceptional skills in managing large teams and projects. With a strong background in operations and logistics, Jon ensures seamless execution of initiatives."
+        },
+        gresa: {
+            name: "Gresa Thaci",
+            position: "The Leader",
+            image: "https://cdn.azeusconvene.com/wp-content/uploads/Women-CEOs-and-Business-Leaders_banner.jpg",
+            bio: "Gresa Thaci is a charismatic and results-driven leader who inspires her team with vision and determination. As the driving force behind the organization, she excels in strategic planning, team building, and innovation."
+        }
+    };
+
+    var founder = founderData[founderId];
+    if (founder) {
+        $('#modal-image').attr('src', founder.image);
+        $('#modal-name').text(founder.name);
+        $('#modal-position').text(founder.position);
+        $('#modal-bio').text(founder.bio);
+        $('#founder-modal').fadeIn();
+    }
+}
+        
+</script>
        
     
 </body>
