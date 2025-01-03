@@ -234,6 +234,33 @@
     <div id="map-container">
         <div id="map"></div>
     </div></div>
+
+    <script>  
+        function updateCountdown(targetDate) {  
+            const timerElement = document.getElementById('countdown-timer');  
+            const interval = setInterval(() => {  
+                const now = new Date().getTime();  
+                const distance = targetDate - now;  
+    
+                if (distance < 0) {  
+                    clearInterval(interval);  
+                    timerElement.textContent = 'Event Started!';  
+                    return;  
+                }  
+    
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));  
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));  
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);  
+    
+                timerElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;  
+            }, 1000);  
+        }  
+    
+        // Shembull date për eventin më të afërt  
+        const nextEventDate = new Date('2025-01-10T15:00:00');  
+        updateCountdown(nextEventDate);  
+    </script> 
     
     <footer class="main-footer">
         <div class="container">
