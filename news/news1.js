@@ -430,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function sortNewsByDate(news) {
-        return news.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return news.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
     
     function formatDate(dateString) {
