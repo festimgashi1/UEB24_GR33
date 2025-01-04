@@ -7,17 +7,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 const heroContent = document.querySelector('.hero-content');
+const heroImage = document.querySelector('.hero-image');
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset;
     if (heroContent) {
         heroContent.style.transform = `translateY(${scrollPosition * 0.5}px)`;
     }
+    if (heroImage) {
+        heroImage.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+    }
 });
 
-
-const sections = document.querySelectorAll('.section-item, .event-item, .news-item, .product-item');
+const sections = document.querySelectorAll('.section-item, .event-item, .news-item, .product-item, .planet-item');
 const animateOnScroll = () => {
     const triggerBottom = window.innerHeight / 5 * 4;
     sections.forEach(section => {
@@ -34,14 +37,14 @@ window.addEventListener('scroll', animateOnScroll);
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-});
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
 
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        nav.classList.remove('show');
-    }
-});
-
-
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('show');
+        }
+    });
+}
