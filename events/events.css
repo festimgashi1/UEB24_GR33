@@ -51,9 +51,7 @@ header h1 {
     padding: 40px 0;
 }
 
-.main-header {
-    padding: 0px 0; 
-}
+
 
 .main-header .container {
     display: flex;
