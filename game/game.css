@@ -54,3 +54,52 @@ h1 {
 .planet.placed {
     opacity: 0.5;
 }
+
+
+.solar-system {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid #4a5568;
+    border-radius: 50%;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #4a5568;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+}
+
+.target {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #a0aec0;
+}
+
+.target:not(.filled) {
+    border: 2px dashed #4a5568;
+    border-radius: 50%;
+}
+
+.target.filled {
+    border: none;
+    background-color: transparent;
+}
+
+.congratulations {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #48bb78;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}

@@ -11,6 +11,7 @@ const planets = [
 
 const planetSelection = document.getElementById('planetSelection');
 const solarSystem = document.getElementById('solarSystem');
+const congratulations = document.getElementById('congratulations');
 
 let placedPlanets = [];
 
@@ -29,7 +30,6 @@ function createPlanetElement(planet) {
 
     return planetElement;
 }
-
 
 function createOrbitAndTarget(planet, index) {
     const orbit = document.createElement('div');
@@ -73,3 +73,26 @@ function createOrbitAndTarget(planet, index) {
     solarSystem.appendChild(orbit);
     solarSystem.appendChild(target);
 }
+
+function placePlanet(planetName, targetElement, planet) {
+    const planetElement = document.createElement('div');
+    planetElement.className = 'planet';
+    planetElement.style.backgroundImage = `url(${planet.image})`;
+    planetElement.style.width = `${planet.size}px`;
+    planetElement.style.height = `${planet.size}px`;
+
+    const originalPlanet = document.querySelector(`.planet[data-name="${planetName}"]`);
+    if (originalPlanet) originalPlanet.classList.add('placed');
+
+    targetElement.innerHTML = '';
+    targetElement.appendChild(planetElement);
+    targetElement.classList.add('filled');
+    placedPlanets.push(planetName);
+}
+
+function checkGameCompletion() {
+    if (placedPlanets.length === planets.length) {
+        congratulations.classList.remove('hidden');
+    }
+}
+
