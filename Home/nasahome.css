@@ -6,32 +6,39 @@ body {
     color: #fff;
 }
 
+
+ol{
+    list-style-type: none ;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-}
-ol{
-    list-style-type: none ;
 }
 
 .main-header {
     background: linear-gradient(135deg, #010103, #030e17);
     padding: 20px 0;
     border-bottom: 2px solid #fff;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0px 0;
 }
+
+
 
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; 
 }
 
 .logo img {
-    
-    list-style-type: none;
-    width: 150px;
+    width: 250px;
     height: auto;
+
 }
 
 .main-nav ul {
