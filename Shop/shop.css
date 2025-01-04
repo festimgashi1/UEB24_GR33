@@ -253,50 +253,59 @@ body.cart-open {
         background-color: #c81d4e;
     }
     
-.container {
-    background: linear-gradient(135deg, #010103, #030e17);
-    border-bottom: 2px solid #fff;
-    top: 0px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-nav ul {
-    display: flex;
-    list-style: none;
-    padding-right: 10px;
-}
-
-.main-nav ul li a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.main-nav ul li a:hover {
-    background-color: #fff;
-    color: black;
-}
-
-.logo {
-    padding-left: 50px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.logo img {
-    width: 150px;
-    height: auto;
-}
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .main-header {
+        background: linear-gradient(135deg, #010103, #030e17);
+        padding: 20px 0;
+        border-bottom: 2px solid #fff;
+        width: 100%; 
+        box-sizing: border-box; 
+        padding: 0px 0;
+    }
+    
+    
+    
+    .main-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+    }
+    
+    .logo img {
+        width: 250px;
+        height: auto;
+    
+    }
+    
+    .main-nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .main-nav ul li a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .main-nav ul li a:hover {
+        background-color: #fff;
+        color: #0e1a27;
+    }
 
 .done-btn{
 margin-left: 40%;

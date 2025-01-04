@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg, #0b0d17, #030e17) ;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.planet-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 200px;
+    margin-top: 0px;
+}
+
+.planet {
+    border-radius: 50%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    cursor: move;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.planet:hover {
+    transform: scale(1.1);
+}
+
+.planet.placed {
+    opacity: 0.5;
+}
+
+
+.solar-system {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid #4a5568;
+    border-radius: 50%;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #4a5568;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
+}
+
+.target {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #a0aec0;
+}
+
+.target:not(.filled) {
+    border: 2px dashed #4a5568;
+    border-radius: 50%;
+}
+
+.target.filled {
+    border: none;
+    background-color: transparent;
+}
+
+.congratulations {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #48bb78;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
