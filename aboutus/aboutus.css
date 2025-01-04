@@ -323,6 +323,7 @@ margin: 50px auto;
 padding: 20px;
 border-radius: 10px;
 position: relative;
+color: rgb(5, 5, 36);
 }
 
 #modal-close {
