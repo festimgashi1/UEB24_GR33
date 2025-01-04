@@ -183,6 +183,30 @@ document.addEventListener('DOMContentLoaded', function () {
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },
+        {
+            title: "NASA's DAVINCI Mission Reveals Venus' Atmospheric Secrets",
+            description: "The DAVINCI probe has successfully descended through Venus' atmosphere, providing unprecedented data about its composition and history.",
+            category: "Planetary Exploration",
+            image: "https://ina.iq/eng/uploads/posts/2022-06/upload_1654365602_1888492882.jpg",
+            sourceUrl: "https://science.nasa.gov/missions/davinci/davincis-many-firsts-at-venus/",
+            date: '2025-06-22'
+        },
+        {
+            title: "First Commercial Space Station Module Successfully Docked",
+            description: "Axiom Space's first commercial module has successfully docked with the International Space Station, marking a new era in space commercialization.",
+            category: "Space Infrastructure",
+            image: "https://www.digitaltrends.com/wp-content/uploads/2024/10/haven-2.jpeg?p=1",
+            sourceUrl: "https://www.nasa.gov/news-release/nasa-selects-first-commercial-destination-module-for-international-space-station/",
+            date: '2025-03-15'
+        },
+        {
+            title: "Breakthrough in Fusion Energy: Net Energy Gain Achieved in Space",
+            description: "Scientists aboard the International Space Station have achieved a significant milestone in fusion research, demonstrating net energy gain in microgravity conditions.",
+            category: "Space Technology",
+            image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-12/221213-National-Ignition-Facility-X-rays-al-1030-1b2653.jpg",
+            sourceUrl: "https://www.theguardian.com/environment/2023/aug/06/us-scientists-achieve-net-energy-gain-second-time-fusion-reaction",
+            date: '2025-09-30'
+        }
     ];
 
     const spaceNews = [
@@ -232,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Space Policy",
             image: "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2024/09/09/f1fe71b8-95dc-44ec-909e-48fc6089aa90_cd9d588c.jpg?itok=vkb_rd9N&v=1725861205",
             sourceUrl: "https://english.www.gov.cn/news/202409/07/content_WS66dbeb9dc6d0868f4e8eab63.html",
-            date: '2024-09-07'
+            date: '2023-09-07'
         },
         {
             title: "Astronomers Detect Mysterious Radio Signal from Distant Galaxy",
@@ -280,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Solar System",
             image: "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/10/solar_orbiter2/21087516-1-eng-GB/Solar_Orbiter_article.jpg",
             sourceUrl: "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_s_first_images_reveal_campfires_on_the_Sun",
-            date: '2020-07-16'
+            date: '2023-07-16'
         },
         {
             title: "Water Ice Discovered on the Moon",
@@ -296,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Solar System Exploration",
             image: "https://i0.wp.com/spacenews.com/wp-content/uploads/2015/06/pluto-newhorizons-e1435599288265.jpg?fit=1024%2C460&ssl=1",
             sourceUrl: "https://www.nasa.gov/mission_pages/newhorizons/main/index.html",
-            date: '2015-07-14'
+            date: '2016-07-14'
         },
         {
             title: "Discovery of Earth-like Exoplanets in TRAPPIST-1 System",
@@ -304,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Exoplanets",
             image: "https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/522/T1-Planet-Lineup_sm.jpg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint",
             sourceUrl: "https://exoplanets.nasa.gov/trappist1/",
-            date: '2017-02-22'
+            date: '2019-02-22'
         },
         {
             title: "Cassini's Grand Finale at Saturn",
@@ -336,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Lunar Exploration",
             image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/01/02/15/moon.jpg",
             sourceUrl: "https://www.science.org/content/article/chinese-spacraft-successfully-lands-moons-far-side-and-sends-pictures-back-home",
-            date: '2019-01-03'
+            date: '2021-01-03'
         },
         {
             title: "ESA's Gaia Mission Creates Most Detailed 3D Map of the Milky Way",
@@ -360,7 +384,31 @@ document.addEventListener('DOMContentLoaded', function () {
             category1: "Astronomy",
             image: "https://i.ytimg.com/vi/9YDfmbmLxwc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBzW48f_aPClYW1FndH9jgcpRZwog",
             sourceUrl: "https://www.nasa.gov/news-release/nasa-publishes-artemis-plan-to-land-first-woman-next-man-on-moon-in-2024/",
-            date: '2014-12-10'
+            date: '2024-12-10'
+        },
+        {
+            title: "NASA's DAVINCI Mission Reveals Venus' Atmospheric Secrets",
+            description: "The DAVINCI probe has successfully descended through Venus' atmosphere, providing unprecedented data about its composition and history.",
+            category1: "Planetary Exploration",
+            image: "https://ina.iq/eng/uploads/posts/2022-06/upload_1654365602_1888492882.jpg",
+            sourceUrl: "https://science.nasa.gov/missions/davinci/davincis-many-firsts-at-venus/",
+            date: '2024-06-22'
+        },
+        {
+            title: "First Commercial Space Station Module Successfully Docked",
+            description: "Axiom Space's first commercial module has successfully docked with the International Space Station, marking a new era in space commercialization.",
+            category1: "Space Infrastructure",
+            image: "https://www.digitaltrends.com/wp-content/uploads/2024/10/haven-2.jpeg?p=1",
+            sourceUrl: "https://www.nasa.gov/news-release/nasa-selects-first-commercial-destination-module-for-international-space-station/",
+            date: '2024-03-15'
+        },
+        {
+            title: "Breakthrough in Fusion Energy: Net Energy Gain Achieved in Space",
+            description: "Scientists aboard the International Space Station have achieved a significant milestone in fusion research, demonstrating net energy gain in microgravity conditions.",
+            category1: "Space Technology",
+            image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-12/221213-National-Ignition-Facility-X-rays-al-1030-1b2653.jpg",
+            sourceUrl: "https://www.theguardian.com/environment/2023/aug/06/us-scientists-achieve-net-energy-gain-second-time-fusion-reaction",
+            date: '2024-09-30'
         }
     ]
 
@@ -382,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function sortNewsByDate(news) {
-        return news.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return news.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
     
     function formatDate(dateString) {

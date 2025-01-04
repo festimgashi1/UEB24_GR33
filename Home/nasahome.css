@@ -11,6 +11,9 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+ol{
+    list-style-type: none ;
+}
 
 .main-header {
     background: linear-gradient(135deg, #010103, #030e17);
@@ -630,4 +633,87 @@ body {
         margin-top: 20px;
     }
 }
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.solar-system {
+    background-color: #030619;
+    padding: 50px 0;
+}
+
+.solar-system h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.planet-item {
+    background-color: #1a1f36;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.planet-item:hover {
+    transform: translateY(-5px);
+}
+
+.planet-item img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.planet-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+.planet-item p {
+    font-size: 0.9rem;
+    color: #ccc;}
 
