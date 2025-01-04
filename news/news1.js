@@ -183,6 +183,22 @@ document.addEventListener('DOMContentLoaded', function () {
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },
+        {
+            title: "NASA's DAVINCI Mission Reveals Venus' Atmospheric Secrets",
+            description: "The DAVINCI probe has successfully descended through Venus' atmosphere, providing unprecedented data about its composition and history.",
+            category: "Planetary Exploration",
+            image: "https://ina.iq/eng/uploads/posts/2022-06/upload_1654365602_1888492882.jpg",
+            sourceUrl: "https://science.nasa.gov/missions/davinci/davincis-many-firsts-at-venus/",
+            date: '2025-06-22'
+        },
+        {
+            title: "First Commercial Space Station Module Successfully Docked",
+            description: "Axiom Space's first commercial module has successfully docked with the International Space Station, marking a new era in space commercialization.",
+            category: "Space Infrastructure",
+            image: "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/axiom_module.jpg",
+            sourceUrl: "https://www.axiomspace.com/news/axiom-module-1-docks-with-iss",
+            date: '2025-03-15'
+        },
     ];
 
     const spaceNews = [
@@ -361,7 +377,23 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "https://i.ytimg.com/vi/9YDfmbmLxwc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBzW48f_aPClYW1FndH9jgcpRZwog",
             sourceUrl: "https://www.nasa.gov/news-release/nasa-publishes-artemis-plan-to-land-first-woman-next-man-on-moon-in-2024/",
             date: '2014-12-10'
-        }
+        },
+        {
+            title: "NASA's DAVINCI Mission Reveals Venus' Atmospheric Secrets",
+            description: "The DAVINCI probe has successfully descended through Venus' atmosphere, providing unprecedented data about its composition and history.",
+            category1: "Planetary Exploration",
+            image: "https://ina.iq/eng/uploads/posts/2022-06/upload_1654365602_1888492882.jpg",
+            sourceUrl: "https://science.nasa.gov/missions/davinci/davincis-many-firsts-at-venus/",
+            date: '2025-06-22'
+        },
+        {
+            title: "First Commercial Space Station Module Successfully Docked",
+            description: "Axiom Space's first commercial module has successfully docked with the International Space Station, marking a new era in space commercialization.",
+            category1: "Space Infrastructure",
+            image: "https://www.digitaltrends.com/wp-content/uploads/2024/10/haven-2.jpeg?p=1",
+            sourceUrl: "https://www.nasa.gov/news-release/nasa-selects-first-commercial-destination-module-for-international-space-station/",
+            date: '2025-03-15'
+        },
     ]
 
     const newsGrid = document.getElementById('news-grid');

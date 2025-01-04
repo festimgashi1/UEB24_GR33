@@ -10,9 +10,9 @@ body {
 
 
 .main-header {
-    background-color: #1e1e2f;
-    padding-bottom: 30px;
-    
+    background: linear-gradient(135deg, #0b0d17, #030e17);
+    border-bottom: solid 2px white;
+    margin-bottom: 20px;
 }
 
 .main-header .container {
@@ -22,8 +22,7 @@ body {
 }
 
 .logo img {
-    
-    
+    padding-top: 5px;
     width: 150px;
     height: auto;
 }
