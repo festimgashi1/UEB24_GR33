@@ -72,8 +72,7 @@
                 }
                 
                 .main-header {
-                    background: linear-gradient(135deg, #0b0d17, #030e17);
-                    padding: 20px 0;
+                    background:#07090f;
                     border-bottom: 2px solid #fff;
                     width: 100%; 
                     box-sizing: border-box; 
