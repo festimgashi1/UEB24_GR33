@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0b0d17, #030e17);
+    background: #030e17;
     color: #ffffff;
     line-height: 1.4;
     overflow-x: hidden;
@@ -43,7 +43,7 @@ header h1 {
 }
 
 .main-header {
-    background: linear-gradient(135deg, #0b0d17, #030e17);
+    background: linear-gradient(135deg, #010103, #030e17);
     padding: 20px 0;
     border-bottom: 2px solid #fff;
     width: 100%; 
