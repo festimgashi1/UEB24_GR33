@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const sections = document.querySelectorAll('.section-item, .event-item, .news-item, .product-item, .planet-item');
+const sections = document.querySelectorAll('.section');
 const animateOnScroll = () => {
     const triggerBottom = window.innerHeight / 5 * 4;
     sections.forEach(section => {
@@ -34,17 +34,19 @@ const animateOnScroll = () => {
 };
 window.addEventListener('scroll', animateOnScroll);
 
-const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.createElement('div');
+menuToggle.classList.add('menu-toggle');
+menuToggle.innerHTML = '☰';
+document.querySelector('.main-header .container').appendChild(menuToggle);
+
 const nav = document.querySelector('.main-nav');
 
-if (menuToggle && nav) {
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('show');
-    });
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-            nav.classList.remove('show');
-        }
-    });
-}
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('show');
+    }
+});
