@@ -381,7 +381,7 @@ transform: scale(1.05);
     margin: 0 auto;
     padding: 40px 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0b3d91, #b91b62);
+    background: linear-gradient(135deg, #0b2a5f, #76117b);
     background-size: 400% 400%;
     animation: gradientBackground 6s ease infinite;
     border-radius: 20px;
@@ -577,3 +577,4 @@ transform: scale(1.05);
     color: #f1c40f; 
     transform: scale(1.1);
 }
+
