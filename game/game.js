@@ -96,3 +96,14 @@ function checkGameCompletion() {
     }
 }
 
+function initGame() {
+    planets.forEach(planet => {
+        planetSelection.appendChild(createPlanetElement(planet));
+    });
+
+    planets.forEach((planet, index) => {
+        createOrbitAndTarget(planet, index);
+    });
+}
+
+initGame();
