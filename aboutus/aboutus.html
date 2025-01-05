@@ -4,24 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>About our Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aboutus.css">
+    <style>
+                body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: rgb(8, 3, 33);
+            
+        }
+
+        #customer-reviews {
+            background-color: rgb(8, 3, 33);
+            padding: 60px 0;
+        }
+
+        .about-section-heading {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2415af;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .border-line {
+            width: 60px;
+            height: 3px;
+            background-color: #2415af;
+            margin: 0 auto 30px auto;
+        }
+
+        .review-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 20px;
+            overflow: hidden;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .review-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .review-card .stars {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .review-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #0a1856;
+        }
+
+        .review-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .review-btn {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(101, 134, 255, 0.4);
+        }
+
+        .review-btn:hover {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(101, 134, 255, 0.6);
+        }
+    </style>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
             <div class="logo">
-              <img style="width: 180px; height: 140px;" src="https://mail.google.com/mail/u/2?ui=2&ik=b458992570&attid=0.1&permmsgid=msg-a:r691731773497202744&th=194238ccdb3aaf4c&view=att&disp=safe&realattid=f_m5eclkoj0&zw" alt="">
+              <img src="./logo.png" alt="">
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/Home/nasahome.html" target="_blank">Home</a></li>
-                    <li><a href="/events/events.html" target="_blank">Events</a></li>
-                    <li><a href="/news/news.html" target="_blank">News</a></li>
-                    <li><a href="/Shop/shop.html" target="_blank">Shop</a></li>
-                    <li><a href="/aboutus/aboutus.html" target="_blank">About Us</a></li>
+                    <li><a href="/Home/nasahome.html" ">Home</a></li>
+                    <li><a href="/events/events.html" ">Events</a></li>
+                    <li><a href="/news/news.html" ">News</a></li>
+                    <li><a href="/Shop/shop.html" >Shop</a></li>
+                    <li><a href="/aboutus/aboutus.html" >About Us</a></li>
+                    <li><a href="/game/game.html">Play</a></li>
                 </ul>
             </nav>
         </div>
@@ -252,7 +356,45 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                         <p>"The NASA merchandise in the shop is top-notch! I bought a model of the James Webb Space Telescope, and it's now the centerpiece of my living room. Great quality and fast shipping!"</p>
                     </div>
                 </div>
+                <div class="review-buttons">
+                    <button id="prevReview" class="review-btn">Previous</button>
+                    <button id="nextReview" class="review-btn">Next</button>
+                </div>
 
+                <div class="center-container">
+                    <div class="submit-review">
+                        <h3>Leave Your Review</h3>
+                        <form id="reviewForm" action="mailto:gresathaci18@gmail.com" method="post" enctype="text/plain">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="stars">Your Rating:</label>
+                            <div class="stars">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★☆</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★☆☆</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★☆☆☆</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★☆☆☆☆</label>
+                            </div>
+                
+                            <label for="reviewText">Your Review:</label>
+                            <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                
+                            <button type="submit" class="review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                    <div class="success-message" style="display: none; opacity: 0; transition: opacity 0.5s ease; text-align: center; margin-top: 20px;">
+                        Successfully Submitted!
+                    </div>
+                </div>
+        </section>
+    </section>
+    
+       
+        
        
        
        
@@ -271,24 +413,24 @@ window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/l
 </script>
 <script>
     $(document).ready(function() {
-    // Check if jQuery is working
+    
     if (typeof jQuery != 'undefined') {
         console.log('jQuery is loaded');
         
-        // Your existing click handlers
+        
         $('.about-founders-box').click(function() {
             var founderId = $(this).data('founder');
             showFounderDetails(founderId);
         });
         
-        // Close modal handlers
+        
         $('#modal-close, #founder-modal').click(function(e) {
             if (e.target === this) {
                 $('#founder-modal').fadeOut();
             }
         });
         
-        // Prevent modal from closing when clicking content
+      
         $('#modal-content').click(function(e) {
             e.stopPropagation();
         });
@@ -297,9 +439,8 @@ window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/l
     }
 });
 
-// Function to show founder details
 function showFounderDetails(founderId) {
-    // Founder data object
+    
     var founderData = {
         festim: {
             name: "Festim Gashi",
@@ -342,7 +483,77 @@ function showFounderDetails(founderId) {
         $('#founder-modal').fadeIn();
     }
 }
+     
+     ////
+
+     const reviews = [
+            {
+                name: "Sarah Johnson",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvTbL5WSUuKYddpZI-SXU6JbudFjCtFCGuw&s",
+                stars: 5,
+                text: "The space exploration event I attended was mind-blowing! The virtual reality tour of Mars was so realistic, I felt like I was actually there. Can't wait for the next event!"
+            },
+            {
+                name: "Mike Chen",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0isAZwcyx-H1UVScRALSRfJ-BrHo5euFzA&s",
+                stars: 4,
+                text: "I love the weekly space news updates. They keep me informed about the latest discoveries and missions. The articles are easy to understand even for a space novice like me."
+            },
+            {
+                name: "Emily Rodriguez",
+                image: "https://miro.medium.com/v2/resize:fit:1400/1*hATEYt0u5wpq4VqRjsXfhQ.png",
+                stars: 5,
+                text: "The NASA merchandise in the shop is top-notch! I bought a model of the James Webb Space Telescope, and it's now the centerpiece of my living room. Great quality and fast shipping!"
+            },
+            {
+                name: "Alex Thompson",
+                image: "https://cdn.prod.website-files.com/65b930adeca3cfaea4f78aab/65d6b33c2abedc84c2ae7317_Alex-Thompson-full.jpg",
+                stars: 5,
+                text: "The live stream of the rocket launch was incredible! The commentary was informative, and the HD video quality made me feel like I was right there at the launch site."
+            },
+            {
+                name: "Olivia Parker",
+                image: "https://static.wikia.nocookie.net/alex-gilbert-series/images/2/21/118500916_340783543953850_2544225655675891_n.jpg/revision/latest?cb=20201019030934",
+                stars: 4,
+                text: "I attended the 'Introduction to Astrophotography' workshop, and it was fantastic! The instructor was knowledgeable, and I left with some great tips for capturing night sky images."
+            }
+        ];
+
+        let currentIndex = 0; 
+        const reviewsContainer = document.getElementById("reviewContainer");
+        const prevButton = document.getElementById("prevReview");
+        const nextButton = document.getElementById("nextReview");
+
+        function displayReviews() {
+            reviewsContainer.innerHTML = ""; 
+
+            for (let i = currentIndex; i < currentIndex + 3; i++) {
+                const review = reviews[i % reviews.length]; 
+
+                const reviewCard = document.createElement("div");
+                reviewCard.classList.add("review-card");
+                reviewCard.innerHTML = `
+                    <img src="${review.image}" alt="${review.name}">
+                    <h3>${review.name}</h3>
+                    <div class="stars">${"★".repeat(review.stars)}${"☆".repeat(5 - review.stars)}</div>
+                    <p>${review.text}</p>
+                `;
+                reviewsContainer.appendChild(reviewCard);
+            }
+        }
+
+        prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 3 + reviews.length) % reviews.length; 
+            displayReviews();
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 3) % reviews.length; 
+            displayReviews();
+        });
+
         
+        displayReviews();
 </script>
        
     

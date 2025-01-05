@@ -72,12 +72,11 @@
                 }
                 
                 .main-header {
-                    background: linear-gradient(135deg, #0b0d17, #030e17);
-                    padding: 20px 0;
+                    background:#07090f;
                     border-bottom: 2px solid #fff;
                     width: 100%; 
                     box-sizing: border-box; 
-                    padding: 40px 0;
+                    padding: 0px 0;
                 }
                 
                 .main-header .container {
@@ -88,10 +87,10 @@
                 }
                 
                 .logo img {
-                    width: 150px;
+                    width: 250px;
                     height: auto;
-                }
                 
+                }
                 .main-nav ul {
                     display: flex;
                     gap: 25px;
@@ -324,6 +323,7 @@ margin: 50px auto;
 padding: 20px;
 border-radius: 10px;
 position: relative;
+color: rgb(5, 5, 36);
 }
 
 #modal-close {
@@ -483,3 +483,6 @@ transform: scale(1.05);
     color: #5f636b;
     font-size: 22px;
 }
+
+
+
