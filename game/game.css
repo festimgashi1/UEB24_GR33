@@ -103,3 +103,50 @@ h1 {
 .hidden {
     display: none;
 }
+
+.target.wrong {
+    border-color: red;
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    
+    .game-area {
+        flex-direction: column;
+    }
+    
+    .planet-selection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+    
+    .solar-system {
+        width: 90vw;
+        height: 90vw;
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+}
+
+.sun {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
