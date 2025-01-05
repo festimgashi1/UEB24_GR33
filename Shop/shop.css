@@ -323,8 +323,10 @@ margin-left: 40%;
         background-color: #0b0d17;
         color: #fff;
         border-top: 2px solid #4a90e2;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: center;
+        padding-top: 30px;
     }
     
 .footer-content {
@@ -388,6 +390,7 @@ margin-left: 40%;
         text-align: center;
         border-top: 1px solid #4a90e2;
         padding-top: 20px;
+        padding-bottom: 50px;
     }
     
     .footer-bottom p {
