@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Telescope Observes Interstellar Comet 2I/Borisov",
             description: "The Hubble Space Telescope captures detailed images of 2I/Borisov, the second known interstellar object to visit our solar system.",
             category: "Astronomy",
-            image: "https://images.indianexpress.com/2019/10/nasa-hubble-telescope-comet-2IBorisov-759.jpg?w=414",
+            image: "https://www.universetoday.com/wp-content/uploads/2019/10/Halleys_Comet_1910.jpg",
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Telescope Observes Interstellar Comet 2I/Borisov",
             description: "The Hubble Space Telescope captures detailed images of 2I/Borisov, the second known interstellar object to visit our solar system.",
             category1: "Astronomy",
-            image: "https://images.indianexpress.com/2019/10/nasa-hubble-telescope-comet-2IBorisov-759.jpg?w=414",
+            image: "https://www.universetoday.com/wp-content/uploads/2019/10/Halleys_Comet_1910.jpg",
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },
