@@ -1,6 +1,6 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background:linear-gradient(135deg, #0b0d17, #030e17) ;
+    background:rgb(8, 3, 33);
     color: white;
     margin: 0;
     padding: 0;
@@ -171,5 +171,25 @@ transition: background-color 0.3s, color 0.3s;
 .main-nav ul li a:hover {
     background-color: #fff;
     color: #0e1a27;
-    }
-    
+}
+
+.game-controls {
+    text-align: center;
+    padding-top: 50px;
+    margin: 1rem 0;
+}
+
+#reset-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #16213e; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button{
+    font-family: 'Orbitron', sans-serif;
+}

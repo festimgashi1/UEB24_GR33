@@ -1,13 +1,15 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Orbitron', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #1e1e2f;
+    background: linear-gradient(135deg, #03030a, #030e17);
+    color: #fff;
 }
 
+
+ol{
+    list-style-type: none ;
+}
 
 .container {
     width: 90%;
@@ -25,13 +27,12 @@ body {
     
 }
 
-
-
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; 
+    
 }
 
 .logo img {
@@ -45,6 +46,7 @@ body {
     gap: 25px;
     list-style: none;
     padding: 0;
+   
 }
 
 .main-nav ul li a {
@@ -56,6 +58,7 @@ body {
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
+   
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -64,11 +67,11 @@ body {
     color: #0e1a27;
 }
 
-#header1 {
+/* #header1 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 5px;
-}
+} */
 
 h3{
     color: #ffd700;
