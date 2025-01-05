@@ -546,3 +546,33 @@ transform: scale(1.05);
     border-color: #4a90e2;
     box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
 }
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.stars input {
+    display: none;
+}
+
+
+.stars label {
+    font-size: 24px; 
+    color: #dfe6f3; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+.stars input:checked + label {
+    color: #f1c40f; 
+}
+
+
+.stars label:hover {
+    color: #f1c40f; 
+    transform: scale(1.1);
+}
