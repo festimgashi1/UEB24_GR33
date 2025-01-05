@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Space Telescope Celebrates 30 Years of Discovery",
             description: "The Hubble Space Telescope marked its 30th anniversary in orbit, continuing to provide groundbreaking observations of the universe and inspiring a new generation of astronomers.",
             category: "Astronomy",
-            image: "https://www.slsc.org/wp-content/uploads/2020/04/Hubble-30th-banner-logo-img-960x480.jpg",
+            image: "https://images.fineartamerica.com/images-medium-large-5/hubble-space-telescope-nasa-esa-and-d-lennon-esastscidetlev-van-ravenswaayscience-photo-library.jpg",
             sourceUrl: "https://hubblesite.org/mission-and-telescope/hubble-30th-anniversary",
             date: '2020-04-24'
         },
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Space Telescope Celebrates 30 Years of Discovery",
             description: "The Hubble Space Telescope marked its 30th anniversary in orbit, continuing to provide groundbreaking observations of the universe and inspiring a new generation of astronomers.",
             category1: "Astronomy",
-            image: "https://www.slsc.org/wp-content/uploads/2020/04/Hubble-30th-banner-logo-img-960x480.jpg",
+            image: "https://images.fineartamerica.com/images-medium-large-5/hubble-space-telescope-nasa-esa-and-d-lennon-esastscidetlev-van-ravenswaayscience-photo-library.jpg",
             sourceUrl: "https://hubblesite.org/mission-and-telescope/hubble-30th-anniversary",
             date: '2020-04-24'
         },
