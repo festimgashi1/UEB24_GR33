@@ -33,6 +33,7 @@ ol{
     justify-content: space-between;
     align-items: center;
     width: 100%; 
+    
 }
 
 .logo img {
@@ -46,6 +47,7 @@ ol{
     gap: 25px;
     list-style: none;
     padding: 0;
+   
 }
 
 .main-nav ul li a {
@@ -57,6 +59,7 @@ ol{
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
+   
     transition: background-color 0.3s, color 0.3s;
 }
 
