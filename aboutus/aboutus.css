@@ -540,3 +540,9 @@ transform: scale(1.05);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); 
 }
 
+.submit-review input:focus,
+.submit-review textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
