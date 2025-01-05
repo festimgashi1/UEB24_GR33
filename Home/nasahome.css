@@ -4,6 +4,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     background-color: #030619;
     color: #fff;
+
 }
 
 
@@ -15,9 +16,12 @@ ol{
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    
+
 }
 
 .main-header {
+    
     background: linear-gradient(135deg, #010103, #030e17);
     padding: 20px 0;
     border-bottom: 2px solid #fff;
@@ -32,7 +36,8 @@ ol{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; 
+    width: 100%;
+   
     
 }
 
