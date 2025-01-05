@@ -360,6 +360,38 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                     <button id="prevReview" class="review-btn">Previous</button>
                     <button id="nextReview" class="review-btn">Next</button>
                 </div>
+
+                <div class="center-container">
+                    <div class="submit-review">
+                        <h3>Leave Your Review</h3>
+                        <form id="reviewForm" action="mailto:gresathaci18@gmail.com" method="post" enctype="text/plain">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="stars">Your Rating:</label>
+                            <div class="stars">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★☆</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★☆☆</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★☆☆☆</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★☆☆☆☆</label>
+                            </div>
+                
+                            <label for="reviewText">Your Review:</label>
+                            <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                
+                            <button type="submit" class="review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                    <div class="success-message" style="display: none; opacity: 0; transition: opacity 0.5s ease; text-align: center; margin-top: 20px;">
+                        Successfully Submitted!
+                    </div>
+                </div>
+        </section>
+    </section>
     
        
         
