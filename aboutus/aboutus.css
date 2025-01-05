@@ -578,3 +578,34 @@ transform: scale(1.05);
     transform: scale(1.1);
 }
 
+.review-btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc); 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(101, 134, 255, 0.4);
+}
+
+.review-btn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(101, 134, 255, 0.6);
+}
+
+
+.success-message {
+    font-size: 18px;
+    color: #4248b5;
+    font-weight: 600;
+    padding: 12px;
+    background: #eaffea;
+    border: 1px solid #5b1e9b;
+    border-radius: 12px;
+    display: none;
+    transition: opacity 0.5s ease;
+}
