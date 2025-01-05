@@ -1,6 +1,6 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background:#2a2a3b;
+    background:rgb(8, 3, 33);
     color: white;
     margin: 0;
     padding: 0;
@@ -182,16 +182,12 @@ transition: background-color 0.3s, color 0.3s;
 #reset-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #030e17;
+    background-color: #16213e; 
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#reset-button:hover {
-    background-color: #16213e; 
 }
 
 button{
