@@ -484,5 +484,36 @@ transform: scale(1.05);
     font-size: 22px;
 }
 
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; 
+    background: linear-gradient(to right, #4facfe, #99a2e8); 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+.submit-review {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); 
+    padding: 40px; 
+    max-width: 500px; 
+    width: 100%;
+    text-align: center;
+    border: 1px solid #f0f4ff; 
+}
+
+
+.submit-review h3 {
+    font-size: 26px; 
+    color: #2c3e50; 
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
 
 
