@@ -169,10 +169,10 @@ document.addEventListener('DOMContentLoaded', function () {
     filterFavorites();
 });
 
-// Lista e fakteve për Astronominë
+
 const astronomyFacts = [
     "The Milky Way galaxy will collide with the Andromeda galaxy in about 4.5 billion years.",
-    "A day on Venus is longer than a year on Venus.",
+    " If you can spot the Andromeda Galaxy with your naked eyes, you can see something 14.7 billion billion miles away.",
     "There are more stars in the universe than grains of sand on all Earth's beaches.",
     "Neutron stars are so dense that a sugar-cube-sized amount of material would weigh a billion tons on Earth.",
     "Saturn's moon Titan has a thick atmosphere and lakes of liquid methane.",
@@ -180,16 +180,22 @@ const astronomyFacts = [
     "A light year is the distance light travels in one year, about 5.88 trillion miles (9.46 trillion kilometers).",
     "Black holes are so dense that not even light can escape their gravity.",
     "The Sun accounts for 99.86% of the mass in the solar system.",
-    "Jupiter has the most moons of any planet in our solar system, with 95 confirmed moons as of now."
+    "Jupiter has the most moons of any planet in our solar system, with 95 confirmed moons as of now.",
+    "Mars is called the Red Planet because of its red coloring, which comes from the large amount of iron oxide – known on Earth as rust – on the planet’s surface.",
+    "Mercury’s temperature varies from -280° F on its night side to 800° F during the day.",
+    "Jupiter is the largest planet. It could contain the other seven planets in just 70 percent of its volume.",
+    "Scientists estimate that the earliest stars formed some 200 million years after the Big Bang.",
+    " One million Earths could fit inside the Sun – and the Sun is considered an average-size star.",
+    "If you could fly a plane to Pluto, the trip would take more than 800 years!"
 ];
 
-// Funksioni për të marrë një fakt të rastësishëm
+
 function getRandomFact() {
     const randomIndex = Math.floor(Math.random() * astronomyFacts.length);
     return astronomyFacts[randomIndex];
 }
 
-// Event listener për butonin
+
 document.getElementById('fact-button').addEventListener('click', () => {
     const fact = getRandomFact();
     document.getElementById('fact-display').innerText = fact;

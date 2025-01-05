@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     line-height: 1.6;
     color: #333;
     max-width: 1400px;
@@ -9,23 +9,34 @@ body {
 }
 
 
-.main-header {
-    background: linear-gradient(135deg, #0b0d17, #030e17);
-    border-bottom: solid 2px white;
-    margin-bottom: 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
+
+.main-header {
+    background: linear-gradient(135deg, #010103, #030e17);
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0px 0;
+}
+
+
 
 .main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; 
 }
 
 .logo img {
-    padding-top: 5px;
-    padding-left: 5px;
-    width: 150px;
+    width: 250px;
     height: auto;
+
 }
 
 .main-nav ul {

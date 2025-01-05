@@ -1,12 +1,12 @@
 const planets = [
-    { name: 'Mercury', image: '/loja/mercury.png', orbitRadius: 100, size: 50 },
-    { name: 'Venus', image: '/loja/venus.png', orbitRadius: 140, size: 40 },
-    { name: 'Earth', image: '/loja/toka.png', orbitRadius: 180, size: 45 },
-    { name: 'Mars', image: '/loja/mars.png', orbitRadius: 220, size: 35 },
-    { name: 'Jupiter', image: '/loja/jupiter.png', orbitRadius: 280, size: 80 },
-    { name: 'Saturn', image: '/loja/saturn.png', orbitRadius: 340, size: 70 },
-    { name: 'Uranus', image: '/loja/uranus.png', orbitRadius: 400, size: 60 },
-    { name: 'Neptune', image: '/loja/neptun.png', orbitRadius: 460, size: 55 },
+    { name: 'Mercury', image: '/game/planets/mercury.png', orbitRadius: 100, size: 50 },
+    { name: 'Venus', image: '/game/planets/venus.png', orbitRadius: 140, size: 40 },
+    { name: 'Earth', image: '/game/planets/earth.png', orbitRadius: 180, size: 45 },
+    { name: 'Mars', image: '/game/planets/mars.png', orbitRadius: 220, size: 35 },
+    { name: 'Jupiter', image: '/game/planets/jupiter.png', orbitRadius: 280, size: 80 },
+    { name: 'Saturn', image: '/game/planets/saturn.png', orbitRadius: 340, size: 70 },
+    { name: 'Uranus', image: '/game/planets/uranus.png', orbitRadius: 400, size: 60 },
+    { name: 'Neptune', image: '/game/planets/neptun.png', orbitRadius: 460, size: 55 },
 ];
 
 const planetSelection = document.getElementById('planetSelection');
@@ -96,3 +96,14 @@ function checkGameCompletion() {
     }
 }
 
+function initGame() {
+    planets.forEach(planet => {
+        planetSelection.appendChild(createPlanetElement(planet));
+    });
+
+    planets.forEach((planet, index) => {
+        createOrbitAndTarget(planet, index);
+    });
+}
+
+initGame();

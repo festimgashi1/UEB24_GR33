@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Space Telescope Celebrates 30 Years of Discovery",
             description: "The Hubble Space Telescope marked its 30th anniversary in orbit, continuing to provide groundbreaking observations of the universe and inspiring a new generation of astronomers.",
             category: "Astronomy",
-            image: "https://www.slsc.org/wp-content/uploads/2020/04/Hubble-30th-banner-logo-img-960x480.jpg",
+            image: "https://images.fineartamerica.com/images-medium-large-5/hubble-space-telescope-nasa-esa-and-d-lennon-esastscidetlev-van-ravenswaayscience-photo-library.jpg",
             sourceUrl: "https://hubblesite.org/mission-and-telescope/hubble-30th-anniversary",
             date: '2020-04-24'
         },
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Telescope Observes Interstellar Comet 2I/Borisov",
             description: "The Hubble Space Telescope captures detailed images of 2I/Borisov, the second known interstellar object to visit our solar system.",
             category: "Astronomy",
-            image: "https://images.indianexpress.com/2019/10/nasa-hubble-telescope-comet-2IBorisov-759.jpg?w=414",
+            image: "https://www.universetoday.com/wp-content/uploads/2019/10/Halleys_Comet_1910.jpg",
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Space Telescope Celebrates 30 Years of Discovery",
             description: "The Hubble Space Telescope marked its 30th anniversary in orbit, continuing to provide groundbreaking observations of the universe and inspiring a new generation of astronomers.",
             category1: "Astronomy",
-            image: "https://www.slsc.org/wp-content/uploads/2020/04/Hubble-30th-banner-logo-img-960x480.jpg",
+            image: "https://images.fineartamerica.com/images-medium-large-5/hubble-space-telescope-nasa-esa-and-d-lennon-esastscidetlev-van-ravenswaayscience-photo-library.jpg",
             sourceUrl: "https://hubblesite.org/mission-and-telescope/hubble-30th-anniversary",
             date: '2020-04-24'
         },
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Hubble Telescope Observes Interstellar Comet 2I/Borisov",
             description: "The Hubble Space Telescope captures detailed images of 2I/Borisov, the second known interstellar object to visit our solar system.",
             category1: "Astronomy",
-            image: "https://images.indianexpress.com/2019/10/nasa-hubble-telescope-comet-2IBorisov-759.jpg?w=414",
+            image: "https://www.universetoday.com/wp-content/uploads/2019/10/Halleys_Comet_1910.jpg",
             sourceUrl: "https://science.nasa.gov/missions/hubble/hubble-observes-1st-confirmed-interstellar-comet/",
             date: '2019-10-16'
         },

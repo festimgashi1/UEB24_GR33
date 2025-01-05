@@ -360,6 +360,40 @@ Join us on this journey as we explore the unknown, share knowledge, and spark th
                     <button id="prevReview" class="review-btn">Previous</button>
                     <button id="nextReview" class="review-btn">Next</button>
                 </div>
+
+                <div class="center-container">
+                    <div class="submit-review">
+                        <h3>Leave Your Review</h3>
+                        <form id="reviewForm" action="mailto:gresathaci18@gmail.com" method="post" enctype="text/plain">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="stars">Your Rating:</label>
+                            <div class="stars">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★☆</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★☆☆</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★☆☆☆</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★☆☆☆☆</label>
+                            </div>
+                
+                            <label for="reviewText">Your Review:</label>
+                            <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+                
+                            <button type="submit" class="review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                    <div class="success-message" style="display: none; opacity: 0; transition: opacity 0.5s ease; text-align: center; margin-top: 20px;">
+                        Successfully Submitted!
+                    </div>
+                </div>
+        </section>
+    </section>
+
+    
     
        
         
@@ -523,6 +557,53 @@ function showFounderDetails(founderId) {
         
         displayReviews();
 </script>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    We are dedicated to advancing humanity's understanding of the universe through innovation, 
+                    research, and exploration. Join us on this incredible journey!
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/events/events.html">Events</a></li>
+                    <li><a href="/aboutus/aboutus.html">About Us</a></li>
+                    <li><a href="/news/news.html">News</a></li>
+                    <li><a href="/Shop/shop.html">Shop</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>+1 (555) 123-4567</p>
+                <p>info@spaceagency.com</p>
+                <p>123 Space Exploration Blvd, Houston, TX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/038/447/961/non_2x/ai-generated-instagram-logo-free-png.png" alt=""></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338508_960_720.png" alt="" style="width: 45px; height: 52px; padding-bottom: 7px;"></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/023/986/680/non_2x/twitter-logo-twitter-logo-transparent-twitter-icon-transparent-free-free-png.png" alt="" style="margin-right: 1px;"></a>
+                    <a href="https://www.youtube.com/?app=desktop" target="_blank"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/480/small_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Space Exploration Agency. All rights reserved.</p>
+            <ul>
+                <li><a href="https://www.nasa.gov/privacy/#privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://science.nasa.gov/learn/basics-of-space-flight/glossary/" target="_blank">Terms of Use</a></li>
+                <li><a href="https://www.nasa.gov/sitemap/" target="_blank">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
        
     
 </body>
