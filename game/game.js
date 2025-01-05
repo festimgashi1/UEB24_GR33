@@ -106,4 +106,22 @@ function initGame() {
     });
 }
 
+document.getElementById('reset-button').addEventListener('click', () => {
+    placedPlanets = [];
+
+    const targets = document.querySelectorAll('.target.filled');
+    targets.forEach(target => {
+        target.innerHTML = 'Here';
+        target.classList.remove('filled');
+    });
+
+    const placedPlanetElements = document.querySelectorAll('.planet.placed');
+    placedPlanetElements.forEach(planet => {
+        planet.classList.remove('placed');
+    });
+
+    congratulations.classList.add('hidden');
+});
+
+
 initGame();
