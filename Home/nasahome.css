@@ -538,7 +538,9 @@ ol{
 .footer-section {
     flex: 1 1 calc(25% - 20px);
     min-width: 200px;
+   
 }
+
 
 .footer-section h3 {
     margin-bottom: 15px;
@@ -610,6 +612,11 @@ ol{
 
 .footer-bottom ul li a:hover {
     color: #fff;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #3678b5;
+    
 }
 
 
